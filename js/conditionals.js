@@ -21,20 +21,44 @@ console.log("The src file `conditionals.js` is successfully linked");
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-var color = prompt("Please input a color:");
-var colorChoice = color.toLowerCase();
 
-switch(colorChoice){
-    case "blue":
+//FIRST EXERCISE:
+
+//THE FIRST SOLUTION USES A FUNCTION;
+//IT TAKES A STRING INPUT AND CONVERTS IT TO LOWERCASE, THEN RUNS AN IF-ELSE STATEMENT;
+//CALL THE FUNCTION IN THE CONSOLE TO USE IT;
+function analyzeColor(colorName){
+    var colorNameLower = colorName.toLowerCase();
+    console.log(colorNameLower);
+
+    if (colorNameLower === "blue"){
         alert("Blue is the color of the sky.");
-        break;
-    case "red":
-        alert("Strawberries are red.")
-        break;
-    default:
-        alert("I don't have any words to describe " + color + ".");
-        break;
+    }else if (colorNameLower === "red"){
+        alert("Strawberries are red.");
+    }else {
+        alert("I don't have any words to describe " + colorName + ".");
+    }
 }
+
+//THE SECOND SOLUTION USES A SWITCH STATEMENT;
+
+//var colorChoice = prompt("Please input a color:");
+//var colorChoiceLowercase = colorChoice.toLowerCase();
+
+//switch(colorChoiceLowercase){
+//    case "blue":
+//        alert("Blue is the color of the sky.");
+//        break;
+//    case "red":
+//       alert("Strawberries are red.")
+//        break;
+//    default:
+//        alert("I don't have any words to describe " + colorChoiceLowercase + ".");
+//        break;
+//}
+
+//END OF FIRST EXERCISE
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -47,6 +71,11 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+
+//SECOND EXERCISE
+
+analyzeColor(randomColor);
+console.log(randomColor);
 
 /**
  * TODO:
