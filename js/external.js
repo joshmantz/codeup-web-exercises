@@ -13,16 +13,6 @@ var userInput = prompt('What is your favorite color?');
 console.log('The user entered: ' + userInput);
 alert("Wow, " +userInput + " " + "is my favorite color too!");
 
-//LUNCH QUESTION:
-//Confirm - True or false? [ok and cancel]
-//var likedLunch = confirm("Did you enjoy lunch today?");
-//alert("You told me that it was " + likedLunch + " that you liked lunch.");
-
-//The following section prompts the user for a response:
-//var forLunch = prompt("I know it was " + likedLunch + " that you enjoyed your lunch. What did you have?");
-//console.log('The user entered: ' + forLunch);
-
-
 //QUESTION III PART I (MOVIE RENTAL CALCULATION)
 //The following section gathers data from the user and calculates their total rental price for movies:
 
@@ -131,17 +121,8 @@ console.log('Qualifies for Offer: ' + applyOffer);
 //var isPremium = confirm("Are you a premium member?");
 //var moreThanTwo = confirm("Did you buy more than two items today");
 //var offerNotExpired = confirm("Was the coupon still in effect?");
-//altert("It is " + ((isPremium||moreThanTwo) && offerNotExpired) + "...;
+//alert("It is " + ((isPremium||moreThanTwo) && offerNotExpired) + "...;
 
-//Example
-//var pricePerDay = 3;
-//var littleMermaidDays = 3;
-//var brotherBearDays = 5;
-//var herculesDays = 1;
-//var movieOneTotal = littleMermaidDays*pricePerDay;
-//var movieTwoTotal = brotherBearDays*pricePerDay;
-//var movieThreeTotal = herculesDays*pricePerDay;
-//var totalPrice = movieOneTotal+movieTwoTotal+movieThreeTotal;
 
 
 

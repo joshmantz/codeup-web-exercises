@@ -93,7 +93,7 @@ console.log(tipPercentage);
 var tipAmount = (tipPercentage*totalBill);
 console.log(tipAmount);
 
-var totalWithTip = totalBill + tipAmount; //- Why does this section of code calculate to a string? It returns "10010) instead of $110.
+//var totalWithTip = totalBill + tipAmount; //- Why does this calculate to a string? It returns: "10010"
 //console.log(totalWithTip);
 // alert((tipAmount)+(totalBill)); Why are these two variables being added as a string?
 
