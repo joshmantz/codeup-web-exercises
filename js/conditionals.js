@@ -22,11 +22,11 @@ console.log("The src file `conditionals.js` is successfully linked");
  * console.logging the function's return value
  */
 
-//FIRST EXERCISE:
+//THE FIRST EXERCISE:
 
-//THE FIRST SOLUTION USES A FUNCTION;
-//IT TAKES A STRING INPUT AND CONVERTS IT TO LOWERCASE, THEN RUNS AN IF-ELSE STATEMENT;
-//CALL THE FUNCTION IN THE CONSOLE TO USE IT;
+//THIS FUNCTION TAKES A STRING INPUT AND CONVERTS IT TO LOWERCASE, THEN RUNS AN IF-ELSE STATEMENT;
+
+
 function analyzeColor(colorName){
     var colorNameLower = colorName.toLowerCase();
     console.log(colorNameLower);
@@ -40,24 +40,8 @@ function analyzeColor(colorName){
     }
 }
 
-//THE SECOND SOLUTION USES A SWITCH STATEMENT;
 
-//var colorChoice = prompt("Please input a color:");
-//var colorChoiceLowercase = colorChoice.toLowerCase();
-
-//switch(colorChoiceLowercase){
-//    case "blue":
-//        alert("Blue is the color of the sky.");
-//        break;
-//    case "red":
-//       alert("Strawberries are red.")
-//        break;
-//    default:
-//        alert("I don't have any words to describe " + colorChoiceLowercase + ".");
-//        break;
-//}
-
-//END OF FIRST EXERCISE
+//END OF THE FIRST EXERCISE
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -72,15 +56,46 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-//SECOND EXERCISE
-
+//THE SECOND EXERCISE
+/*
 analyzeColor(randomColor);
 console.log(randomColor);
+*/
+//END OF THE SECOND EXERCISE
 
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+
+//THE THIRD EXERCISE:
+//The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate the prompt:
+/*
+//var colorChoice = prompt("Please input a color:");
+
+var colorChoice = randomColor;
+console.log(colorChoice);
+
+//The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate prompt.
+
+//var colorChoiceLowercase = colorChoice.toLowerCase();
+var colorChoiceLowercase = randomColor.toLowerCase();
+console.log(colorChoiceLowercase);
+
+switch(colorChoiceLowercase){
+    case "blue":
+        alert("Blue is the color of the sky.");
+        break;
+    case "red":
+        alert("Strawberries are red.")
+        break;
+    default:
+        alert("I don't have any words to describe " + colorChoiceLowercase + ".");
+        break;
+}
+
+//END OF THE THIRD EXERCISE
+*/
 
 /**
  * TODO:
@@ -88,7 +103,17 @@ console.log(randomColor);
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+//THE FOURTH EXERCISE:
+// This runs the analyzeColor function with a user prompt:
+var colorChoice = prompt("Please input a color:");
+console.log(colorChoice);
 
+var colorChoiceLowercase = colorChoice.toLowerCase();
+console.log(colorChoiceLowercase);
+
+analyzeColor(colorChoiceLowercase);
+
+//END OF THE FOURTH EXERCISE
 /* ########################################################################## */
 
 /**
