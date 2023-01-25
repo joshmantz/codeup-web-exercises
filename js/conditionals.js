@@ -26,7 +26,7 @@ console.log("The src file `conditionals.js` is successfully linked");
 
 //THIS FUNCTION TAKES A STRING INPUT AND CONVERTS IT TO LOWERCASE, THEN RUNS AN IF-ELSE STATEMENT;
 
-
+/*
 function analyzeColor(colorName){
     var colorNameLower = colorName.toLowerCase();
     console.log(colorNameLower);
@@ -39,8 +39,7 @@ function analyzeColor(colorName){
         alert("I don't have any words to describe " + colorName + ".");
     }
 }
-
-
+*/
 //END OF THE FIRST EXERCISE
 
 // Don't change the next two lines!
@@ -48,8 +47,10 @@ function analyzeColor(colorName){
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
+
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
@@ -57,10 +58,12 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 
 //THE SECOND EXERCISE
+
 /*
 analyzeColor(randomColor);
 console.log(randomColor);
 */
+
 //END OF THE SECOND EXERCISE
 
 /**
@@ -70,6 +73,7 @@ console.log(randomColor);
 
 //THE THIRD EXERCISE:
 //The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate the prompt:
+
 /*
 //var colorChoice = prompt("Please input a color:");
 
@@ -103,8 +107,10 @@ switch(colorChoiceLowercase){
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
 //THE FOURTH EXERCISE:
 // This runs the analyzeColor function with a user prompt:
+/*
 var colorChoice = prompt("Please input a color:");
 console.log(colorChoice);
 
@@ -112,6 +118,7 @@ var colorChoiceLowercase = colorChoice.toLowerCase();
 console.log(colorChoiceLowercase);
 
 analyzeColor(colorChoiceLowercase);
+*/
 
 //END OF THE FOURTH EXERCISE
 /* ########################################################################## */
@@ -136,6 +143,45 @@ analyzeColor(colorChoiceLowercase);
  * return value.
  */
 
+//THE FIFTH EXERCISE:
+
+
+function calculateTotal(totalAmount, luckyNumber){
+    switch(luckyNumber){
+        case 1:
+            var firstResult = (totalAmount-(totalAmount*0.1));
+            console.log(firstResult);
+            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + firstResult);
+            break;
+        case 2:
+            var secondResult = (totalAmount-(totalAmount*0.25));
+            console.log(secondResult);
+            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + secondResult);
+            break;
+        case 3:
+            var thirdResult = (totalAmount-(totalAmount*0.35));
+            console.log(thirdResult);
+            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + thirdResult);
+            break;
+        case 4:
+            var fourthResult = (totalAmount-(totalAmount*0.5));
+            console.log(fourthResult);
+            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + fourthResult);
+            break;
+        case 5:
+            var fifthResult = (totalAmount-(totalAmount*0))
+            console.log(fifthResult);
+            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + fifthResult);
+            break;
+        default:
+            var otherResult = (totalAmount-(totalAmount*0));
+            console.log(otherResult);
+            alert ("Your original bill was $" + totalAmount + " and your lucky number is " + luckyNumber + " for a final bill of " + otherResult);
+            break;
+
+    }
+}
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -144,8 +190,18 @@ analyzeColor(colorChoiceLowercase);
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+
+//Generate a random number between 0 and 6
+var luckyNumber = Math.floor(Math.random() * 6);
+
+var totalBill = prompt("Please enter the total amount of your bill:");
+console.log(totalBill)
+
+calculateTotal(totalBill, luckyNumber);
+console.log(totalBill);
+console.log(luckyNumber);
+
+
 
 /**
  * TODO:
@@ -165,3 +221,5 @@ analyzeColor(colorChoiceLowercase);
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+confirm("Would you like to enter a number?");
