@@ -86,7 +86,7 @@ console.log("The total number of hours worked at " + thirdEmployer + " is " + th
 
 var thirdEmployerPayout = thirdEmployerHoursWorked*thirdEmployerRatePerHour;
 
-//Total hours worked this week between all employers:
+//TOTAL HOURS WORKED THIS WEEK FROM ALL EMPLOYERS
 var combinedHoursWorked = firstEmployerHoursWorked+secondEmployerHoursWorked+thirdEmployerHoursWorked;
 
 //Weekly payout calculation:
@@ -102,9 +102,7 @@ var registrationAvailable = (studentsRegistered < classCapacity) && noClassConfl
 alert("Registration is available!");
 
 //Question 3 Part IV (Product Offer):
-//apply product offer if:
-//itemsBought > 2; (except for premium members)
-//offerNotExpired = true;
+//apply product offer if itemsBought > 2 (except for premium members) and offerNotExpired = true;
 
 var desiresProduct = confirm("Would you like to see if you qualify for a special discount for books?");
 var offerTotalDays = 10;
@@ -116,14 +114,3 @@ var numProducts = prompt("How many products did you purchase?");
 var threeProductMin = numProducts > 2;
 var applyOffer = (offerNotExpired && premiumMember) || (offerNotExpired && threeProductMin);
 console.log('Qualifies for Offer: ' + applyOffer);
-
-//canDiscount = (isPremium === true) || (moreThanTwo === true) && offerNotExpired;
-//var isPremium = confirm("Are you a premium member?");
-//var moreThanTwo = confirm("Did you buy more than two items today");
-//var offerNotExpired = confirm("Was the coupon still in effect?");
-//alert("It is " + ((isPremium||moreThanTwo) && offerNotExpired) + "...;
-
-
-
-
-
