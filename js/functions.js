@@ -62,6 +62,7 @@ function isTwo(num){
 }
 console.log(isTwo(random));
 
+
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -75,7 +76,7 @@ console.log(isTwo(random));
  */
 function calculateTip(x, y){
     var tipAmount = x * y;
-    return tipAmount;
+    console.log("Tip amount: $" + tipAmount.toFixed(2) + ".");
 }
 
 /**
@@ -84,20 +85,26 @@ function calculateTip(x, y){
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
 var totalBill = prompt("Welcome to the tip calculator. Please enter the amount of your bill:");
-console.log(totalBill);
+totalBill = Number.parseInt(totalBill).toFixed(2);
+console.log("Total Bill: $" + totalBill + ".");
 
-var tipPercentage = prompt("What percentage would you like to tip?");
-console.log(tipPercentage);
+var tipPercentage = prompt("What percentage would you like to tip? Enter a number between 1 and 100.");
+tipPercentage = Number.parseFloat(tipPercentage).toFixed(2);
+console.log("Tip Percentage: " + tipPercentage + "%");
 
-var tipAmount = (tipPercentage*totalBill);
-console.log(tipAmount);
+var tipAmount = (((tipPercentage/100)*totalBill).toFixed(2));
+console.log("Tip Amount: $" + tipAmount + ".");
+
+var newTotal = Number(tipAmount) + Number(totalBill);
+console.log(newTotal.toFixed(2));
 
 //var totalWithTip = totalBill + tipAmount; //- Why does this calculate to a string? It returns: "10010"
 //console.log(totalWithTip);
 // alert((tipAmount)+(totalBill)); Why are these two variables being added as a string?
 
-alert("A " + tipPercentage + "% tip for your original bill of $" + totalBill + " equals " + "a total tip of $" + tipAmount + ".");
+alert("A " + tipPercentage + "% tip for your original bill of $" + totalBill + " equals " + "a total tip of $" + tipAmount + ". The new total, including tip, is: $" + newTotal.toFixed(2) + ".");
 
 /**
  * TODO:
