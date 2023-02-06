@@ -22,11 +22,11 @@ console.log("The src file `conditionals.js` is successfully linked");
  * console.logging the function's return value
  */
 
+
 //THE FIRST EXERCISE:
 
 //THIS FUNCTION TAKES A STRING INPUT AND CONVERTS IT TO LOWERCASE, THEN RUNS AN IF-ELSE STATEMENT;
 
-/*
 function analyzeColor(colorName){
     var colorNameLower = colorName.toLowerCase();
     console.log(colorNameLower);
@@ -38,9 +38,11 @@ function analyzeColor(colorName){
     }else {
         alert("I don't have any words to describe " + colorName + ".");
     }
+    console.log("Function Complete");
 }
-*/
+
 //END OF THE FIRST EXERCISE
+
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -59,10 +61,9 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 //THE SECOND EXERCISE
 
-/*
-analyzeColor(randomColor);
-console.log(randomColor);
-*/
+var colorOutput = analyzeColor(randomColor);
+console.log(colorOutput);
+
 
 //END OF THE SECOND EXERCISE
 
@@ -73,16 +74,14 @@ console.log(randomColor);
 
 //THE THIRD EXERCISE:
 //The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate the prompt:
-
-/*
 //var colorChoice = prompt("Please input a color:");
 
 var colorChoice = randomColor;
 console.log(colorChoice);
 
 //The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate prompt.
-
 //var colorChoiceLowercase = colorChoice.toLowerCase();
+
 var colorChoiceLowercase = randomColor.toLowerCase();
 console.log(colorChoiceLowercase);
 
@@ -99,7 +98,6 @@ switch(colorChoiceLowercase){
 }
 
 //END OF THE THIRD EXERCISE
-*/
 
 /**
  * TODO:
@@ -117,7 +115,8 @@ console.log(colorChoice);
 var colorChoiceLowercase = colorChoice.toLowerCase();
 console.log(colorChoiceLowercase);
 
-analyzeColor(colorChoiceLowercase);
+alert(analyzeColor(colorChoiceLowercase));
+
 */
 
 //END OF THE FOURTH EXERCISE
@@ -145,7 +144,7 @@ analyzeColor(colorChoiceLowercase);
 
 //THE FIFTH EXERCISE:
 
-
+/*
 function calculateTotal(totalAmount, luckyNumber){
     switch(luckyNumber){
         case 1:
@@ -181,6 +180,7 @@ function calculateTotal(totalAmount, luckyNumber){
 
     }
 }
+*/
 
 /**
  * TODO:
@@ -191,6 +191,7 @@ function calculateTotal(totalAmount, luckyNumber){
  * price before the discount was, and what their price after the discount is.
  */
 
+/*
 //Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 
@@ -200,8 +201,7 @@ console.log(totalBill)
 calculateTotal(totalBill, luckyNumber);
 console.log(totalBill);
 console.log(luckyNumber);
-
-
+*/
 
 /**
  * TODO:
@@ -222,4 +222,35 @@ console.log(luckyNumber);
  * HINT: The way we prompt for a value could be improved
  */
 
-confirm("Would you like to enter a number?");
+var inputNumber = confirm("Would you like to enter a number?");
+console.log(inputNumber);
+
+if (inputNumber){
+    var numChoice = prompt("Please input a number:");
+    console.log(parseFloat(numChoice));
+}
+
+console.log(numChoice);
+
+//FUNCTION I
+function isEven (numChoice) {
+    if ((numChoice % 2) === 0) {
+        alert(numChoice + " is an even number.");
+    } else {
+        alert(numChoice + " is an odd number.");
+    }
+}
+
+//FUNCTION II
+function add100(numChoice){
+    alert("Your number plus 100 equals " + (numChoice+100) + ".");
+}
+
+//FUNCTION III
+function isPositive(numChoice){
+    if (numChoice >= 0){
+        alert("Your number is positive.");
+    } else {
+        alert("Your number is negative.");
+    }
+}
