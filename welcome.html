@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head> <!--Info for web browser, Meta details, not visible on page. -->
-
-  <!--Metadata; extended information to describe data on website -->
-  <meta charset="UTF-8"/><!--This input helps the website display languages-->
-  <meta name="author" content="Josh Mantz" /> <!--The creator of the page-->
-  <meta name="description" content="This is the description of the page" /><!--150 characters max; visible in search results under heading-->
-  <meta name="viewport" content="width=device-width, initial-scale=1"/><!--used for mobile compatability-->
-
-  <title>Hello, World!</title> <!--A strong descriptor here helps with SEO-->
-
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome HTML</title>
 </head>
+<body>
+<a id="returnToTop"></a>
+Hello, World!
+<header>
+    <h1>Welcome to Veridian Dynamics!</h1>
+    At Veridian Dynamics, <strong>we</strong> solve <i>your</i> problems with <strong><i>technology</i></strong>.
+    <hr>
+</header>
 
-<body> <!-- Headers, Paragraphs, Images, and Links -->
-    Hello, World!
+<header>
+    <h3>Core Values</h3>
+        <ul>
+            <li>Competence</li>
+            <li>Involvement</li>
+            <li>Technology</li>
+        </ul>
 
-<!--Semantic Markup-->
+    <h3>Our Process</h3>
+        <ol>
+            <li>Plan</li>
+            <li>Evaluate</li>
+            <li>Implement</li>
+        </ol>
 
-<header></header>
-<nav></nav>
-<section></section>
-<main></main>
-<figure></figure>
-
-<fieldset>
-  <legend>Which book do you like the most?</legend>
-
-   <input type="radio" id="city_of_god" name="Favorite Book" value="A">
-   <label for ="city_of_god">The City of God</label><br>
-
-   <input type="radio" id="being_and_time" name="Favorite Book" value="A">
-   <label for ="being_and_time">Being and Time</label><br>
-
-   <input type="radio" id="mind_and_nature" name="Favorite Book" value="A">
-   <label for ="mind_and_nature">Mind and Nature</label>
-
-</fieldset>
-
-<details>
-  <summary>Table of Contents</summary>
-
-  <p>These are the chapters of the book: </p>
-
-  <ol type="I">
-    <li>Chapter One Title</li>
-    <li>Chapter Two Title</li>
-    <li>Chapter Three Title</li>
-    <li>Chapter Four Title</li>
-    <li>Chapter Five Title</li>
-    <li>Chapter Six Title</li>
-    <li>Chapter Seven Title</li>
-    <li>Chapter Eight Title</li>
-    <li>Chapter Nine Title</li>
-    <li>Chapter Ten Title</li>
-    <li>Chapter Eleven Title</li>
-    <li>Chapter Twelve Title</li>
-  </ol>
-</details>
-
-<label>
-  Are you a heavy reader?
-    <input type="checkbox" name="peas" />
-</label><br>
-
-<label for="username">Enter you username:</label>
-<input id="username" name="username" type="text" />
-
-<label for="username"> Find my username:
-  <input type="checkbox" name="Find Username" />
-</label>
-
-<p>
-  Press <kbd>CTRL</kbd> + <kbd>Shift</kbd> to access secondary keyboard commands.</kbd>
-</p>
-
-<label for="oneword">Enter a word between 3-12 characters):</label>
-<input type="text" id="oneword" name="oneword"
-       required minlength="3" maxlength="12" size="21">
-
-<!--Embed an image of a truck in Death Valley and link it to the Death Valley National Park website-->
-<p>
-    <a href="https://www.nps.gov/deva/index.htm">
-    <img
-     src="/media/Truck Death Valley Uhebe.png"
-     alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains"
-     width="750px"/>
-    </a>
-</p>
+    <h3>2020 Vision</h3>
+        <ul>
+            <li>Become #1 in Technology</li>
+            <li>Increase Success by 20%</li>
+            <li>Increase Business by 30%</li>
+        </ul>
+    <hr>
+</header>
 
 
+Company Vision
+<div class="row">
+            <div class="column">
+                <img
+                        src="/media/corporate1_adobeStock_103995369.jpeg"
+                        alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains."
+                        style="width:750px; height: 500px"/>
+            </div>
+            <div class="column">
+                <img
+                        src="/media/pexels-abdullah-ghatasheh-1631678.jpg"
+                     alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains."
+                        style="width:750px; height: 500px"/>
+             </div>
+            <div class="column">
+                <img
+                        src="/media/pexels-meeting-shakehands-5673488.jpg"
+                        alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains."
+                        style="width: 750px; height: 500px"/>
+            </div>
+            <div class="column">
+                <img
+                        src="/media/pexels-mountain-sunset-15336715.jpg"
+                        alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains."
+                        style="width:750px"/>
+            </div>
+    <hr>
+</div>
 
-<footer></footer>
-
+<header>
+    <h3>Our Product</h3>
+        <table style="border:1px solid darkred">
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Features</th>
+            </tr>
+            <tr>
+                <th>Starter</th>
+                <th>$99</th>
+                <th>Base Technology</th>
+            </tr>
+            <tr>
+                <th>Advanced</th>
+                <th>$199</th>
+                <th>Additional Features</th>
+            </tr>
+            <tr>
+                <th>Premium</th>
+                <th>$499</th>
+                <th>Unlimited Support</th>
+            </tr>
+        </table>
+<i>All products come with our quality guarantee&trade;.</i>
+</header>
+<a href="#returnToTop">Return to Top</a>
 </body>
-
 </html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!--Info for web browser, Meta details, not visible on page. -->
+
+  <title>Practice HTML</title> <!--A strong descriptor here helps with SEO-->
+  <!--Metadata; extended information to describe data on website -->
+  <meta charset="UTF-8"/><!--This input helps the website display languages-->
+  <meta name="author" content="Josh Mantz" /> <!--The creator of the page-->
+  <meta name="description" content="This is the description of the page" /><!--150 characters max; visible in search results under heading-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/><!--used for mobile compatability-->
+
+</head>
+
+<body> <!-- Headers, Paragraphs, Images, and Links -->
+<a id="returnToTop"></a>
+
+Hello, World!
+<header>
+  <h1>Large Heading (H1)</h1>
+  <h3>Mid-Sized Heading (H3)</h3>
+  <h6>Small Heading (H6)</h6>
+</header>
+
+<!--Semantic Markup-->
+<p>
+  A paragraph tag is a block tag used for a block of text. <br>
+  It reserves the space for the entire block. <br>
+  Break tags are used to move the next line.
+</p>
+
+<p>This is the first paragraph tag.</p>
+<p>This is the second paragraph tag.</p>
+<p>
+  This is the third paragraph tag.
+  <span>This is an example of an INLINE span tag.</span>
+</p>
+
+<span>This is an INLINE span tag outside of the paragraph tag. It uses only the area it needs.</span>
+
+
+<nav></nav>
+<section></section>
+<main></main>
+<figure></figure>
+
+<fieldset>
+  <legend>Which book do you like the most?</legend>
+
+  <input type="radio" id="city_of_god" name="Favorite Book" value="A">
+  <label for ="city_of_god">The City of God</label><br>
+
+  <input type="radio" id="being_and_time" name="Favorite Book" value="A">
+  <label for ="being_and_time">Being and Time</label><br>
+
+  <input type="radio" id="mind_and_nature" name="Favorite Book" value="A">
+  <label for ="mind_and_nature">Mind and Nature</label>
+
+</fieldset>
+
+<details>
+  <summary>Table of Contents</summary>
+
+  <p>These are the chapters of the book: </p>
+
+  <ol type="I">
+    <li>Chapter One Title</li>
+    <li>Chapter Two Title</li>
+    <li>Chapter Three Title</li>
+    <li>Chapter Four Title</li>
+    <li>Chapter Five Title</li>
+    <li>Chapter Six Title</li>
+    <li>Chapter Seven Title</li>
+    <li>Chapter Eight Title</li>
+    <li>Chapter Nine Title</li>
+    <li>Chapter Ten Title</li>
+    <li>Chapter Eleven Title</li>
+    <li>Chapter Twelve Title</li>
+  </ol>
+</details>
+
+<label>
+  Are you a heavy reader?
+  <input type="checkbox" name="peas" />
+</label><br>
+
+<label for="username">Enter you username:</label>
+<input id="username" name="username" type="text" />
+
+<label for="username"> Find my username:
+  <input type="checkbox" name="Find Username" />
+</label>
+
+<p>
+  Press <kbd>CTRL</kbd> + <kbd>Shift</kbd> to access secondary keyboard commands.</kbd>
+</p>
+
+<label for="oneword">Enter a word between 3-12 characters):</label>
+<input type="text" id="oneword" name="oneword"
+       required minlength="3" maxlength="12" size="21">
+
+<!--Embed an image of a truck in Death Valley and link it to the Death Valley National Park website-->
+<p>
+  <a href="https://www.nps.gov/deva/index.htm">
+    <img
+            src="/media/Truck Death Valley Uhebe.png"
+            alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains."
+            width="750px"/>
+  </a>
+</p>
+
+<input type="number" required>
+<input type="text" required>
+<input type="date" required>
+
+
+<h1>Josh Mantz</h1>
+<h3>Breathworker</h3>
+<h6>Conscious Connected Breathing</h6>
+<a href="https://joshmantz.com">Go to joshmantz.com </a>
+
+<h4>Breathwork Styles</h4>
+<ol>
+  <li>Conscious Connected Breathing</li>
+  <li>Pranayama</li>
+  <li>Apnea</li>
+  <li>Nadi Shodhanam</li>
+</ol>
+
+<h4>Coaching Topics</h4>
+
+<ul>
+  <li>Philosophy</li>
+  <li>Consciousness</li>
+  <li>Cosmology</li>
+</ul>
+
+<table style="border:1px solid red">
+  <tr>
+    <th>Make</th>
+    <th>Model</th>
+  </tr>
+  <tr>
+    <th>Toyota</th>
+    <th>Tundra</th>
+  </tr>
+  <tr>
+    <th>Toyota</th>
+    <th>4Runner</th>
+  </tr>
+</table>
+
+<a href="https://www.linkedin.com/">LinkedIn</a>
+
+<footer></footer>
+<a href="#returnToTop">Return to Top</a>
+</body>
+
+</html>
