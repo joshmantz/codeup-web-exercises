@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <title>Adding CSS</title>
 
+    <!-- Linking an external .css sheet. This is the preferred method. This action must be completed in the head. -->
+    <link rel="stylesheet" href="css/intro_to_css.css">
+
     <!--Inline or embedded style sheet-->
     <style>
       h4 {
         color: darkred;
-        size: 5em;
-        border: 3px solid black;
+        font-size: 1em;
+        font-family: Verdana, sans-serif, Arial;
       }
     </style>
-
-    <!-- Linking an external .css sheet. This action must be completed in the head. -->
-    <link rel="stylesheet" href="css/intro_to_css.css">
 
     <!-- Anchor for return to top  link. -->
     <a id="returnToTop"></a>
@@ -24,31 +24,23 @@
 
 <body>
 
-<h1 class="fancy-header">So you want to add CSS to your HTML</h1>
+<h1 class="firebrick-header">LINKING CSS WITH HTML</h1>
 
-<h3 style="color:rebeccapurple; text-decoration: underline">Here's us using a style attribute</h3>
+<h4 style="color:rebeccapurple; text-decoration: underline; font-family: Verdana, sans-serif, Arial">THIS IS AN INLINE STYLING ATTRIBUTE</h4>
 
 <!--Linking to the embedded style sheet 'h4' in the head-->
-<h4>Embedded Sheet 1</h4>
-<h4>Embedded Sheet 2</h4>
-<h4>Embedded Sheet 3</h4>
-<h4>Embedded Sheet 4</h4>
-<h4>Embedded Sheet 5</h4>
-
-<!--In the future-->
-<div class="myheading">Embedded Sheet ex2</div>
-<div class="myheading">Embedded Sheet ex2</div>
-<div class="myheading">Embedded Sheet ex2</div>
+<h4>EMBEDDED SHEET I</h4>
+<h4>EMBEDDED SHEET II</h4>
+<h4>EMBEDDED SHEET III</h4>
 
 <!--External Sheet with internal override-->
-<p style="color:pink; border: 3px solid forestgreen">Text Text Text</p>
+<p style="color:pink; border: 3px solid forestgreen">TEXT TEXT TEXT</p>
 
-<!--External sheet with internal override, but with change matching original value.-->
-<p style="font-size: 5em">Text Goes here.</p>
+<!--External sheet with internal override-->
+<p style="font-size: 4em">TEXT TEXT TEXT</p>
 
 <!--Default paragraph styled by 'intro_to_css.css'-->
-<p>Default paragraph from external css link</p>
-
+<p>DEFAULT PARAGRAPH STYLING FROM EXTERNAL CSS LINK</p>
 
 <a href="#returnToTop">Return to Top</a>
 </body>
