@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head> <!--Info for web browser, Meta details, not visible on page. -->
 
@@ -166,9 +166,36 @@ Hello, World!
       <br>
       <label for="Message">Message</label>
       <input id="message" name="message" type="text" placeholder="Message Body">
+      <br>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="Enter your password">
 
       <input type="submit">
   </form>
+
+<hr>
+
+<!--Zip Code Search Form -->
+<form action="https://request-inspector.glitch.me" method="GET">
+  <label for="zipcode">Zipcode</label>
+  <input type="text" name="zipcode" id="zipcode" placeholder="Input a zipcode">
+  <button type="submit">Search</button>
+</form>
+
+<!-- Newsletter sign-up checkbox; pre-checked -->
+<input name="newsletter_signup" value="true" type="checkbox" checked>Sign up for our newsletter</input>
+
+<br>
+
+<!--Form inputs;Radio Button Question; note that multiple elements related to the same question share the same 'name' attribute-->
+<form>
+  <label>What is the answer to the following question?</label><br>
+  <input type="radio" name="question_1" value="a"><br>
+  <input type="radio" name="question_2" value="b"><br>
+  <input type="radio" name="question_3" value="c"><br>
+  <input type="radio" name="question_4" value="d"><br>
+  <button type="submit">Submit</button>
+</form>
 
 </body>
 
