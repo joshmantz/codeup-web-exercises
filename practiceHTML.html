@@ -197,24 +197,30 @@ Hello, World!
   <button type="submit">Submit</button>
 </form>
 
-<!--Form inputs;Checkbox Button Question; note that multiple elements related to the same question share the same 'name' attribute-->
+<!--Form inputs, with labels;Checkbox Button Question; note that multiple elements related to the same question share the same 'name' attribute-->
 <form>
-  <label>Which styles of breathing do you practice?</label><br>
-  <input type="checkbox" name="question_1" value="Conscious-Connected Breathing (CCB)"><br>
-  <input type="checkbox" name="question_2" value="Pranayama"><br>
-  <input type="checkbox" name="question_3" value="Apnea"><br>
-  <input type="checkbox" name="question_4" value="Vivation"><br>
+  <h3>Which styles of breathing do you practice?</h3>
+  <label for="question_1">Conscious-Connected Breathing (CCB)<input type="checkbox" id="question_1" name="question_1" value="Conscious-Connected Breathing (CCB)"></label><br>
+  <label for="question_2">Pranayama<input type="checkbox" id="question_2" name="question_2" value="Pranayama"></label><br>
+  <label for="question_3">Apnea<input type="checkbox" id="question_3" name="question_3" value="Apnea"></label><br>
+  <label for="question_4">Vivation<input type="checkbox" id="question_4" name="question_4" value="Vivation"></label><br>
   <button type="submit">Submit</button>
-</form>
 
+</form>
+<br>
+
+<!-- Form with SELECT elements, with one option disabled -->
 <form>
-  <label>Please choose where you'd like to conduct your session::</label>
+  <label>Please choose where you'd like to conduct your session::
   <select name="location_preference">
     <option value="temple">The Temple</option>
-    <option value="mango_tree">The Mango Tree</option>
+    <option disabled value="mango_tree">The Mango Tree</option>
     <option value="palapa">The Palapa</option>
   </select>
+  </label>
 </form>
+
+
 
 </body>
 
