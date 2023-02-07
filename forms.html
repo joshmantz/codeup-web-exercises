@@ -24,7 +24,16 @@
 
 9. What happens if you leave off the NAME attribute from an input? enter response
 
+        >>In a radio form, the NAME attribute is what groups together the radio buttons.
+        >>If you remove the NAME attribute from an input, the input falls out of a relationship with the other inputs.
+        >>On the user side, the button still appears functional, but the input doesn't show up in the query.
+        >>The NAME attribute must be the same for all radio buttons if only one option is to be selected.
+
 10. What happens if you leave off the ID attribute from an input?
+
+        >>The ID attribute is in a relationship with the LABEL element.
+        >>Removing an ID attribute severs the relationship between the label and ID name.
+        >>Clicking the label text itself no longer activates the radio button. The user must click the circle.
 -->
 <body>
 <!--Forms have ACTION ("Where is the data going") and METHOD ("How is the data being sent")-->
