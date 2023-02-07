@@ -156,7 +156,7 @@ Hello, World!
 <a href="#returnToTop">Return to Top</a>
 
 <!--Contact form with three inputs-->
-  <form method="POST" action=""></form>
+  <form method="GET" action="">
 
       <label for="name">Name</label>
       <input id="name" name="name" type="text" placeholder="Your name">
@@ -170,7 +170,8 @@ Hello, World!
       <label for="password">Password</label>
       <input id="password" name="password" type="password" placeholder="Enter your password">
 
-      <input type="submit">
+      <button type="submit">Submit</button>
+
   </form>
 
 <hr>
@@ -190,10 +191,10 @@ Hello, World!
 <!--Form inputs;Radio Button Question; note that multiple elements related to the same question share the same 'name' attribute-->
 <form>
   <label>What is the answer to the following question?</label><br>
-  <input type="radio" name="question_1" value="a"><br>
-  <input type="radio" name="question_2" value="b"><br>
-  <input type="radio" name="question_3" value="c"><br>
-  <input type="radio" name="question_4" value="d"><br>
+  <input type="radio" name="question_1" ><br>
+  <input type="radio" name="question_2" ><br>
+  <input type="radio" name="question_3" ><br>
+  <input type="radio" name="question_4" ><br>
   <button type="submit">Submit</button>
 </form>
 
@@ -211,7 +212,8 @@ Hello, World!
 
 <!-- Form with SELECT elements, with one option disabled -->
 <form>
-  <label>Please choose where you'd like to conduct your session::
+  <h3>Please choose where you'd like to conduct your session:</h3>
+  <label>
   <select name="location_preference">
     <option value="temple">The Temple</option>
     <option disabled value="mango_tree">The Mango Tree</option>

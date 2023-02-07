@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+</head>
+
+<!--
+<PASS> 1. Create text fields for email and password with the appropriate placeholder values;
+<PASS> 2. Create a text area named 'bio' for the user to input a brief description about themselves;
+<PASS> 3. How did you hear about us?' section using RADIO BUTTONS with the values of:
+'billboard', 'radio advertisement', 'internet advertisement', 'other'. Only one value can be selected at a time.
+<PASS> 4.Create a dropdown SELECT that asks the user what web browser they are using.
+
+<PASS> 5. Label all for elements.
+<PASS> 6. Include submit buttons. //One submit button is included for the entire form.
+<PASS> 7. Submit values to request inspector.
+
+<PASS> 8. Change form's request method from GET to POST and vice versa and observe results.
+        >>When the method is set to 'POST' the HTML query produces a RAW query string separate from all other data;
+        >>When the method is set to 'GET' all of the data is displayed in one block, and a separate query string isnt produced.
+
+9. What happens if you leave off the NAME attribute from an input? enter response
+
+10. What happens if you leave off the ID attribute from an input?
+-->
+<body>
+<!--Forms have ACTION ("Where is the data going") and METHOD ("How is the data being sent")-->
+<form action="https://requestinspector.com/inspect/ghostbreath" method="POST" >
+    <!--Label for Email-->
+    <label for="email">Email <input name="email" id="email" type="email" placeholder="Enter your email"></label>
+    <br>
+    <!--Label for Password, type 'password' which conceals entries to view-->
+    <label for="password">Password <input name="password" id="password" type="password" placeholder="Enter your password"></label>
+    <br>
+
+<!--
+Note that the 'name' attribute is associated with the key:pair relationship that appears in PUSH and GET requests; for example, when I enter the query string "Check for short bio" inside of the textarea box and submit the form, it returns the key pair: ...&shortbio=Check+for+short+bio&...
+-->
+
+    <label for="shortbio">Short Bio (~250 words for less)</label>
+    <textarea id="shortbio" name="shortbio" rows="10" cols="45"></textarea>
+    <br>
+
+    <fieldset>
+        <legend>How did you hear about us?</legend>
+
+        <div>
+            <label for="billboardad">Billboard<input type="radio" name="adsource" id="billboardad" value="billboardad"></label><br>
+        </div>
+        <div>
+            <label for="internetad">Internet Advertisement<input type="radio" name="adsource" id="internetad" value="internetad"></label><br>
+        </div>
+        <div>
+             <label for="radioad">Radio Advertisement<input type="radio" name="adsource" id="radioad" value="radioad"></label><br>
+        </div>
+        <div>
+             <label for="otherad">Other<input type="radio" name="adsource" id="otherad" value="otherad"></label><br>
+        </div>
+    </fieldset>
+        <br>
+
+    <h3>What browser are you using?</h3>
+    <label>
+        <select name="browser">
+            <option value="firefox">Mozilla FireFox (Preferred)</option>
+            <option value="chrome">Google Chrome</option>
+            <option value="safari">Apple Safari</option>
+            <option value="edge">Microsoft Edge</option>
+            <option value="otherbrowser">Other</option>
+        </select>
+    </label>
+
+    <button type="submit">Submit></button>
+</form>
+<br>
+<hr>
+
+
+
+</body>
+
+</html>
