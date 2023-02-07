@@ -3,3 +3,8 @@ p {
     font-size: 5em;
     border: 3px solid purple;
 }
+
+.fancy-header {
+    color: firebrick;
+    text-decoration: underline;
+}
