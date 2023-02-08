@@ -42,16 +42,22 @@
     <!--Label for Email-->
     <label for="email">Email <input name="email" id="email" type="email" placeholder="Enter your email"></label>
     <br>
+    <br>
     <!--Label for Password, type 'password' which conceals entries to view-->
     <label for="password">Password <input name="password" id="password" type="password" placeholder="Enter your password"></label>
     <br>
+    <br>
 
 <!--
-Note that the 'name' attribute is associated with the key:pair relationship that appears in PUSH and GET requests; for example, when I enter the query string "Check for short bio" inside of the textarea box and submit the form, it returns the key pair: ...&shortbio=Check+for+short+bio&...
+Note that the 'name' attribute is associated with the key:pair relationship that appears in PUSH and GET requests;
+for example, when I enter the query string "Check for short bio" inside of the textarea box and submit the form,
+it returns the key pair: ...&shortbio=Check+for+short+bio&...
 -->
 
+<!--Radio Button Form - One selected at a time: -->
     <label for="shortbio">Short Bio (~250 words for less)</label>
-    <textarea id="shortbio" name="shortbio" rows="10" cols="45"></textarea>
+    <textarea id="shortbio" name="shortbio" rows="10" cols="45" placeholder="Enter your bio here"></textarea>
+    <br>
     <br>
 
     <fieldset>
@@ -72,10 +78,30 @@ Note that the 'name' attribute is associated with the key:pair relationship that
     </fieldset>
         <br>
 
+
+<!--Radio Button Form - One selected at a time: -->
+    <fieldset>
+        <legend>How did you hear about us?</legend>
+
+        <div>
+            <label for="billboardadA">Billboard<input type="checkbox" name="adsourceA" id="billboardadA" value="billboardadA"></label><br>
+        </div>
+        <div>
+            <label for="internetadA">Internet Advertisement<input type="checkbox" name="adsourceA" id="internetadA" value="internetadA"></label><br>
+        </div>
+        <div>
+            <label for="radioadA">Radio Advertisement<input type="checkbox" name="adsourceA" id="radioadA" value="radioadA"></label><br>
+        </div>
+        <div>
+            <label for="otheradA">Other<input type="checkbox" name="adsourceA" id="otheradA" value="otheradA"></label><br>
+        </div>
+    </fieldset>
+    <br>
+
     <h3>What browser are you using?</h3>
     <label>
         <select name="browser">
-            <option value="firefox">Mozilla FireFox (Preferred)</option>
+            <option value="firefox">Mozilla FireFox</option>
             <option value="chrome">Google Chrome</option>
             <option value="safari">Apple Safari</option>
             <option value="edge">Microsoft Edge</option>
