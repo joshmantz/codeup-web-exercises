@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Welcome HTML</title>
+
+    <!--Link to an external stylesheet 'style.css'-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!--Create and embedded style sheet, then remove; observe color change from blue to purple-->
+    <!--
+    <style>
+    .fancy-header {
+        color: blue;
+        text-decoration: underline;
+    }
+    </style>
+    -->
 </head>
+
 <body>
-<a id="returnToTop"></a>
-Hello, World!
-<header>
-    <h1>Welcome to Veridian Dynamics!</h1>
-    At Veridian Dynamics, <strong>we</strong> solve <i>your</i> problems with <strong><i>technology</i></strong>.
+    <a id="returnToTop"></a>
+
+    <header>
+         <!--Use a style attribute to set the font color of the h1 element to red: -->
+         <!--<h1 style="color:red;">Welcome to Veridian Dynamics!</h1>-->
+         <h1 class="fancy-header">Welcome to Veridian Dynamics!</h1>
+         At Veridian Dynamics, <strong>we</strong> solve <i>your</i> problems with <strong><i>technology</i></strong>.
     <hr>
-</header>
+    </header>
 
-<header>
-    <h3>Core Values</h3>
-        <ul>
-            <li>Competence</li>
-            <li>Involvement</li>
-            <li>Technology</li>
-        </ul>
+    <header>
+        <h3>Core Values</h3>
+            <ul>
+                <li>Competence</li>
+                <li>Involvement</li>
+                <li>Technology</li>
+            </ul>
 
-    <h3>Our Process</h3>
-        <ol>
-            <li>Plan</li>
-            <li>Evaluate</li>
-            <li>Implement</li>
-        </ol>
+         <h3>Our Process</h3>
+            <ol>
+                <li>Plan</li>
+                <li>Evaluate</li>
+                <li>Implement</li>
+             </ol>
 
-    <h3>2020 Vision</h3>
-        <ul>
-            <li>Become #1 in Technology</li>
-            <li>Increase Success by 20%</li>
-            <li>Increase Business by 30%</li>
-        </ul>
+        <h3>2020 Vision</h3>
+            <ul>
+                <li>Become #1 in Technology</li>
+                <li>Increase Success by 20%</li>
+                <li>Increase Business by 30%</li>
+            </ul>
     <hr>
-</header>
+    </header>
 
 
-Company Vision
-<div class="row">
+    Company Vision
+    <div class="row">
             <div class="column">
                 <img
                         src="/media/corporate1_adobeStock_103995369.jpeg"
@@ -65,34 +83,43 @@ Company Vision
                         style="width:750px"/>
             </div>
     <hr>
-</div>
+    </div>
 
-<header>
-    <h3>Our Product</h3>
-        <table style="border:1px solid darkred">
-            <tr>
-                <th>Plan</th>
-                <th>Price</th>
-                <th>Features</th>
-            </tr>
-            <tr>
-                <th>Starter</th>
-                <th>$99</th>
-                <th>Base Technology</th>
-            </tr>
-            <tr>
-                <th>Advanced</th>
-                <th>$199</th>
-                <th>Additional Features</th>
-            </tr>
-            <tr>
-                <th>Premium</th>
-                <th>$499</th>
-                <th>Unlimited Support</th>
-            </tr>
-        </table>
-<i>All products come with our quality guarantee&trade;.</i>
-</header>
+    <header>
+         <h3>Our Product</h3>
+             <table style="border:1px solid darkred">
+                 <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <th>Starter</th>
+                    <th>$99</th>
+                    <th>Base Technology</th>
+                </tr>
+                <tr>
+                    <th>Advanced</th>
+                    <th>$199</th>
+                    <th>Additional Features</th>
+                </tr>
+                <tr>
+                    <th>Premium</th>
+                    <th>$499</th>
+                    <th>Unlimited Support</th>
+                </tr>
+            </table>
+
+    <i>All products come with our quality guarantee&trade;.</i>
+
+    </header>
+
 <a href="#returnToTop">Return to Top</a>
+
 </body>
 </html>
+
+<!--
+What do the above exercises tell you about the precedence of style attributes and embedded and external stylesheets?
+    >>Precedence is local; the linked stylesheet can be overridden locally. If the local is removed, the styling defaults back to the linked stylesheet.
+-->
