@@ -6,20 +6,25 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
+/*
+According to the MDN, its a best practice to declare custom properties on the :root pseudo-class
+so that it can be applied globally across the HTML document.
+*/
+
 :root {
-    --bg-info: lightblue;
+    --the-color-of-information: lightblue;
 }
 
 :root {
-    --bg-success:lightgreen;
+    --the-color-of-success:lightgreen;
 }
 
 :root {
-    --bg-warning: lightyellow;
+    --the-color-of-warnings: lightyellow;
 }
 
 :root {
-    --bg-error: lightpink;
+    --the-color-of-errors: lightpink;
 }
 
 body {
@@ -61,18 +66,18 @@ body {
 /*Coded using color variables:*/
 
 .message-info {
-    background-color: var(--bg-info);
+    background-color: var(--the-color-of-information);
 }
 
 .message-success {
-    background-color: var(--bg-success);
+    background-color: var(--the-color-of-success);
 }
 
 .message-warning {
-    background-color: var(--bg-warning);
+    background-color: var(--the-color-of-warnings);
 }
 
 .message-error {
-    background-color: var(--bg-error);
+    background-color: var(--the-color-of-errors);
 }
 
