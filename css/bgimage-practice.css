@@ -83,3 +83,8 @@ if an image were still placed directly in the HTML:
     background-size: 300px;
     color: darkred;
 }
+
+/*
+Default Sizing: All Padding and All border and SUM with content
+box-sizing: content-box
+*/
