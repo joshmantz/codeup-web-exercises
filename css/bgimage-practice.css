@@ -1,7 +1,10 @@
 header {
-    background-image: url("/media/Dantes_View_(5).jpg");
-    background-size: 1750px;
-    background-position-y: 850px;
+    /*Multiple background images as part of the same element*/
+    background: url("/media/Dantes_View_(5).jpg") center no-repeat, url("/media/Uhebe Landscape (1).jpg") right no-repeat, url("/media/Racetrack (3).jpg") no-repeat;
+    background-size: 750px, 500px, 500px;
+    border-style: inset;
+    border-radius: .5em;
+    border-width: 3pt;
     width: auto;
     height: 200px;
 }
@@ -9,12 +12,22 @@ header {
 .dvnp_header {
     font-size: 35pt;
     font-family: Verdana, Georgia, sans-serif;
+    color: #eee6be;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .dvnp_subhead {
-    font-family: Georgia, Verdana, sans-serif;
+    font-family: Verdana, Georgia, sans-serif;
     font-size: 12pt;
     color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dvnp_subheadstyle {
+    font-family: Verdana, Georgia, sans-serif;
+    font-size: 12pt;
 }
 
 .parent-warning {
