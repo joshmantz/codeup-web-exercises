@@ -1,0 +1,19 @@
+h1 {
+    color: darkslateblue;
+}
+
+.body {
+    color: rebeccapurple;
+    font-size: 1em;
+}
+
+#heading {
+    background-color: black;
+    /*color: red;*/
+}
+
+/* Combining selectors; element, .class, #ID  */
+li, .body, #heading {
+    color: rebeccapurple;
+}
+

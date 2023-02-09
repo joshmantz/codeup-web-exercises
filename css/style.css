@@ -1,9 +1,67 @@
+html * {
+    font-family: Verdana, Georgia, sans-serif;
+}
+
 .fancy-header {
     color: purple;
     text-decoration: underline;
     text-align: center;
+    font-family: Georgia, Verdana, sans-serif;
 }
 
-<h2> {
-    color: #CC3333
+#vision_container {
+    background-image: url("/media/pexels-matej-bg-repeat774548.jpg");
+    background-size: 25px;
+    background-position-y: 150px; /*Manipulates the image across the 'y' axis.*/
 }
+
+/*Add a style to change the color of the headers on your page and make them underlined.*/
+h3 {
+    text-decoration: underline;
+    color: darkslateblue;
+    font-family: Georgia, Verdana, sans-serif;
+}
+
+/*Add a style to change the background color of the page.*/
+body {
+    background-color: ghostwhite;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+table {
+    padding: 21px;
+}
+
+tr, td, th {
+    padding: 21px;
+    font-size: 12px;
+    border: 1px black;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: orangered;
+}
+
+a.hover {
+    color: orangered;
+}
+
+a.active {
+    color: darkslateblue;
+}
+
+/*Add a style to add a background image to your background. Search how to manipulate the position,
+sizing of this background image.
+*/
+
