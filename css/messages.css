@@ -6,6 +6,22 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
+:root {
+    --bg-info: lightblue;
+}
+
+:root {
+    --bg-success:lightgreen;
+}
+
+:root {
+    --bg-warning: lightyellow;
+}
+
+:root {
+    --bg-error: lightpink;
+}
+
 body {
     margin: .5em;
     border-style: solid;
@@ -22,6 +38,9 @@ body {
     border-radius: 7px;
 }
 
+
+/*Coded with direct color inputs*/
+/*
 .message-info {
     background-color: lightblue;
 }
@@ -37,3 +56,23 @@ body {
 .message-error {
     background-color:lightpink;
 }
+*/
+
+/*Coded using color variables:*/
+
+.message-info {
+    background-color: var(--bg-info);
+}
+
+.message-success {
+    background-color: var(--bg-success);
+}
+
+.message-warning {
+    background-color: var(--bg-warning);
+}
+
+.message-error {
+    background-color: var(--bg-error);
+}
+
