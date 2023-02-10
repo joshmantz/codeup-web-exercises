@@ -1,5 +1,6 @@
+/*Multiple background images as part of the same element*/
+/*
 header {
-    /*Multiple background images as part of the same element*/
     background: url("/media/Dantes_View_(5).jpg") center no-repeat, url("/media/Uhebe Landscape (1).jpg") right no-repeat, url("/media/Racetrack (3).jpg") no-repeat;
     background-size: 750px, 500px, 500px;
     border-style: inset;
@@ -8,7 +9,10 @@ header {
     width: auto;
     height: 200px;
 }
+*/
 
+/*DVNP Header*/
+/*
 .dvnp_header {
     font-size: 35pt;
     font-family: Verdana, Georgia, sans-serif;
@@ -29,13 +33,47 @@ header {
     font-family: Verdana, Georgia, sans-serif;
     font-size: 12pt;
 }
+*/
 
+/*Contained Background Image Header*/
+
+.cover-bg-dv {
+    background: url("/media/Racetrack (3).jpg") center no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 1pt;
+    border-radius: 12pt;
+    height: 50em;
+    width: auto;
+
+}
+
+.cover-bg-dv h1 {
+    border: solid black 1pt;
+    width: 100%;
+
+}
+#header-dvnp-centered {
+
+    text-transform: uppercase;
+    font-family: Verdana, Georgia, sans-serif;
+    border-style: solid;
+    border-width: 1pt;
+    border-color: black;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+/*End Contained Background Image div block*/
+
+/*
 .parent-warning {
     width: auto;
     height: 150px;
     border: 10px ridge #000000;
     padding: 36px;
-    background-color: #f4f5f6; /*This is overridden by the background image.*/
+    background-color: #f4f5f6;
     background-image: url("/media/playa_dvnp_bg.png");
     background-size: 150px;
     text-decoration: underline;
@@ -44,6 +82,7 @@ header {
     align-items: center;
     margin: 5px auto;
 }
+*/
 
 /*This is an example of how to run the width and margin properties on a child-image
 if an image were still placed directly in the HTML:
@@ -53,15 +92,16 @@ if an image were still placed directly in the HTML:
     margin:auto;
 }
 */
-
+/*
 .parent-warning {
     font: small-caps bold 1.2rem Verdana;
     text-align: center;
-
 }
+*/
 
 /*Local manipulations to child-warnings (alpha, bravo, charlie) take precedent over the parent-warning.*/
 
+/*
 #warning-alpha {
     width: 9em;
     height: 7em;
@@ -72,30 +112,35 @@ if an image were still placed directly in the HTML:
     border-color: black;
     color: darkred;
 }
+*/
 
+/*
 #warning-bravo {
     width: 9em;
     height: 7em;
     border-style: groove;
     padding: 1rem;
-    background-color: ghostwhite; /*This is overridden by the background image.*/
+    background-color: ghostwhite;
     background-image: url("/media/Uhebe_Crater_(9).jpg");
     background-size: 300px;
     color: darkred;
     border-color: black;
 }
+*/
 
+/*
 #warning-charlie {
     width: 9em;
     height: 7em;
     border-style: ridge;
     border-color: black;
     padding: 1rem;
-    background-color: ghostwhite; /*This is overridden by the background image.*/
+    background-color: ghostwhite;
     background-image: url("/media/Zabriski_Point_Badlands_(5).jpg");
     background-size: 300px;
     color: darkred;
 }
+*/
 
 /*
 Default Sizing: All Padding and All border and SUM with content
