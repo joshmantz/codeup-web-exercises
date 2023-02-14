@@ -32,6 +32,7 @@ html {
 
 body {
     background: whitesmoke;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -39,7 +40,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background: lightgray;
+    background-color: lightgray;
     font-family: Montserat, Work Sans, sans-serif;
     text-align: center;
     color: black;
