@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: lightcoral;
+    border: 3pt solid red;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Nunito Sans, Georgia, sans-serif;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: lightsalmon;
+    border: 3pt solid black;
+}
+
+a {
+    border: 1pt solid black;
+    background-color: lightgrey;
+    font-size: 9pt;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    border: 1pt solid purple;
+    width: 350px;
+}
+
+
+
+.alert-info {
+
+}
+
+.hidden-on-desktop {
+
+}
+
+.nav-links {
+
+}
+
+.header-img {
+
+}
+
+.main {
+
+}
+
+.sub-section {
+
+}
+

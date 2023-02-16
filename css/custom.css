@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.jumbotron {
+    background-image: url("/media/pizza.png");
+    height: 346px;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbo-message {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    border: 1pt solid lightgray;
+}
+
+.pizza-option-tabs {
+    margin: .2em .2em .5em .2em;
+    height: 30px;
+}
+
+.pizza-option-tabs a{
+    text-decoration: none;
+    color: black;
+    border: 1pt solid lightgray;
+    align-items: center;
+    height: 100%;
+}
+
+h2 {
+    padding: .2em;
+}
+
+.meat-section {
+    margin: .2em;
+    border: 1pt dashed red;
+}
+
+.meat-selection {
+    background-color: #f2f2f2;
+}
+
+.beef {
+    border: 1pt solid #f2f2f2;
+}
+
+.ham {
+    border: 1pt solid #f2f2f2;
+}
+
+.philly-steak {
+    border: 1pt solid #f2f2f2;
+}
+
+.bacon {
+    border: 1pt solid #f2f2f2;
+}
+
+.non-meat-section {
+    margin: .2em;
+    border: 1pt dashed red;
+}
+
+.non-meat-selection {
+    background-color: #f2f2f2;
+}
+
+.green-peppers {
+    border: 1pt solid #f2f2f2;
+}
+
+.mushrooms {
+    border: 1pt solid #f2f2f2;
+}
+
+.onions {
+    border: 1pt solid #f2f2f2;
+}
+
+.onions {
+    border: 1pt solid #f2f2f2;
+}
