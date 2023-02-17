@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Order Pizza</title>
@@ -7,9 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 </head>
+
 <body>
 <!--Bootstrap Scrolling Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -43,123 +43,122 @@
 
 <container>
 
+        <!--Add Jumbotron-->
+        <div class="jumbotron">
+            <div class="jumbo-message p-4 mb-2 bg-light" style="--bs-bg-opacity: .5;">Welcome to Pizza World!</div>
+        </div>
 
-    <!--Add Jumbotron-->
-    <div class="jumbotron">
-        <div class="jumbo-message p-4 mb-2 bg-light" style="--bs-bg-opacity: .5;">Welcome to Pizza World!</div>
-    </div>
+        <div>
+            <h2>Build your own pizza!</h2>
+        </div>
 
-    <div>
-        <h2>Build your own pizza!</h2>
-    </div>
+        <!--Add Tabs-->
+        <nav class="nav" id="selections">
+            <a class="nav-link active" aria-current="page" href="#"><span class="badge bg-secondary">1</span> Size and Crust </a>
+            <a class="nav-link" href="#"><span class="badge bg-secondary">2</span> Cheese and Sauce </a>
+            <a class="nav-link" href="#"><span class="badge bg-secondary">3</span> Toppings </a>
+        </nav>
 
-    <!--Add Tabs-->
-    <nav class="nav">
-        <a class="nav-link active" aria-current="page" href="#"><span class="badge bg-secondary">1</span> Size and Crust </a>
-        <a class="nav-link" href="#"><span class="badge bg-secondary">2</span> Cheese and Sauce </a>
-        <a class="nav-link" href="#"><span class="badge bg-secondary">3</span> Toppings </a>
-    </nav>
+        <!--Main Card Body-->
+        <div class="card">
+            <div class="card-header">Choose your size and style of crust</div>
 
-    <!--Main Card Body-->
-    <div class="card">
-        <div class="card-header">Choose your size and style of crust</div>
+            <div class="card-body">
+                <div class="card">
+                    <!--Subcard 1-->
+                    <div class="card-body">
 
-        <div class="card-body">
-            <div class="card">
-                <!--Subcard 1-->
-                <div class="card-body">
+                        <h5 class="card-title">Hand-Tossed</h5>
+                        <p class="card-text">Garlic-seasoned crust with a rich, buttery taste.</p>
 
-                    <h5 class="card-title">Hand-Tossed</h5>
-                    <p class="card-text">Garlic-seasoned crust with a rich, buttery taste.</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Small (10")
+                            </label>
+                        </div>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Small (10")
-                        </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Medium (12")
+                            </label>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Medium (12")
-                        </label>
+                <div class="card">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Crispy Thin</h5>
+                        <p class="card-text">Thin enough for optimal crispy to crunchy ratio.</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Medium (12")
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Large (14")
+                            </label>
+                        </div>
+                     </div>
                     </div>
+                </div>
+            <div class="p-3 mb-2 bg-secondary text-white" style="--bs-bg-opacity: .1;">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Next Step</button>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-body">
+        <!-- Creating Tabs (First Attempt, using links)
+        <div class="pizza-option-tabs">
+            <a href="#"><span class="badge bg-secondary">1</span>Size and Crust </a>
+            <a href="#"><span class="badge bg-secondary">2</span>Cheese and Sauce </a>
+            <a href="#"><span class="badge bg-secondary">3</span>Toppings </a>
+        </div>
+        -->
 
-                    <h5 class="card-title">Crispy Thin</h5>
-                    <p class="card-text">Thin enough for optimal crispy to crunchy ratio.</p>
+        <!-- Creating Tabs (Second Attempt, using buttons)
+        <div class="pizza-option-tabs">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='https://google.com';"> Cheese and Sauce <span class="badge bg-secondary">2</span></button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='https://google.com';"> Cheese and Sauce <span class="badge bg-secondary">2</span></button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='https://google.com';"> Toppings <span class="badge bg-secondary">3</span></button>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Medium (12")
-                        </label>
-                    </div>
+        </div>
+        -->
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Large (14")
-                        </label>
-                    </div>
-                 </div>
-                </div>
+        <!--Creating Tabs (Third Attempt, using cards, list groups)
+        <div class="card">
+            <div class="card-body">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><span class="badge bg-secondary">1</span> Size and Crust</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="badge bg-secondary">2</span> Cheese and Sauce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="badge bg-secondary">3</span> Toppings</a>
+                        </li>
+                    </ul>
             </div>
-        <div class="p-3 mb-2 bg-secondary text-white" style="--bs-bg-opacity: .1;">
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="button">Next Step</button>
+        </div>
+        -->
+
+        <!--Creating Tabs (Fourth Attempt, using an input group)
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><span class="badge bg-secondary">1</span> Size and Crust </button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="badge bg-secondary">2</span> Cheese and Sauce </button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="badge bg-secondary">3</span> Toppings </button>
             </div>
-        </div>
-
-    <!-- Creating Tabs (First Attempt, using links)
-    <div class="pizza-option-tabs">
-        <a href="#"><span class="badge bg-secondary">1</span>Size and Crust </a>
-        <a href="#"><span class="badge bg-secondary">2</span>Cheese and Sauce </a>
-        <a href="#"><span class="badge bg-secondary">3</span>Toppings </a>
-    </div>
-    -->
-
-    <!-- Creating Tabs (Second Attempt, using buttons)
-    <div class="pizza-option-tabs">
-        <button type="button" class="btn btn-primary" onclick="window.location.href='https://google.com';"> Cheese and Sauce <span class="badge bg-secondary">2</span></button>
-        <button type="button" class="btn btn-primary" onclick="window.location.href='https://google.com';"> Cheese and Sauce <span class="badge bg-secondary">2</span></button>
-        <button type="button" class="btn btn-primary" onclick="window.location.href='https://google.com';"> Toppings <span class="badge bg-secondary">3</span></button>
-
-    </div>
-    -->
-
-    <!--Creating Tabs (Third Attempt, using cards, list groups)
-    <div class="card">
-        <div class="card-body">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><span class="badge bg-secondary">1</span> Size and Crust</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="badge bg-secondary">2</span> Cheese and Sauce</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="badge bg-secondary">3</span> Toppings</a>
-                    </li>
-                </ul>
-        </div>
-    </div>
-    -->
-
-    <!--Creating Tabs (Fourth Attempt, using an input group)
-    <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><span class="badge bg-secondary">1</span> Size and Crust </button>
-            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="badge bg-secondary">2</span> Cheese and Sauce </button>
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="badge bg-secondary">3</span> Toppings </button>
-        </div>
-    </nav>
-    -->
+        </nav>
+        -->
 
 
 </container>
