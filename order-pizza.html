@@ -43,6 +43,8 @@
 
 <container>
 
+
+    <!--Add Jumbotron-->
     <div class="jumbotron">
         <div class="jumbo-message p-4 mb-2 bg-light" style="--bs-bg-opacity: .5;">Welcome to Pizza World!</div>
     </div>
@@ -50,6 +52,16 @@
     <div>
         <h2>Build your own pizza!</h2>
     </div>
+
+    <!--Add Tabs-->
+    <nav class="nav">
+        <a class="nav-link active" aria-current="page" href="#"><span class="badge bg-secondary">1</span> Size and Crust </a>
+        <a class="nav-link" href="#"><span class="badge bg-secondary">2</span> Cheese and Sauce </a>
+        <a class="nav-link" href="#"><span class="badge bg-secondary">3</span> Toppings </a>
+
+    </nav>
+
+
 
     <!-- Creating Tabs (First Attempt, using links)
     <div class="pizza-option-tabs">
@@ -86,7 +98,7 @@
     </div>
     -->
 
-    <!--Creating Tabs (Fourth Attempt, using an input group) -->
+    <!--Creating Tabs (Fourth Attempt, using an input group)
     <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><span class="badge bg-secondary">1</span> Size and Crust </button>
@@ -94,81 +106,7 @@
             <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="badge bg-secondary">3</span> Toppings </button>
         </div>
     </nav>
-
-
-    <div class="tab-content" id="nav-tabContent">
-
-        <!--Inserting Radio Buttons (First Tab) -->
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Choose Size and Crust
-
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">Small (10")</label>
-            </div>
-
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2"> Medium (12")</label>
-            </div>
-
-        </div>
-
-        <!--Inserting Radio Buttons (Second Tab) -->
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Choose Cheese and Sauce</div>
-
-        <!--Inserting Checkboxes (Third Tab) -->
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Choose Toppings
-
-                <!--Meat Selection-->
-                 <div class="meat-section">
-                                <div class="meat-selection"> Choose Meats </div>
-                                <div class="beef form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">Beef</label>
-                                </div>
-
-                                <div class="ham form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">Ham</label>
-                                </div>
-
-                                <div class="philly-steak form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">Philly Steak</label>
-                                </div>
-                                <div class="bacon form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">Bacon</label>
-                                </div>
-                </div>
-
-                <!--Non-Meat Section-->
-                <div class="non-meat-section">
-                                <div class="non-meat-selection"> Choose Non-Meats </div>
-
-                                <div class="green-peppers form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">Green Peppers</label>
-                                </div>
-
-                                <div class="mushrooms form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">Mushrooms</label>
-                                </div>
-
-                                <div class="onions form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">Onions</label>
-                                </div>
-
-                                <div class="jalepenos form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">Jalepeno Peppers</label>
-                                </div>
-                </div>
-        </div>
-
-    </div>
+    -->
 
 
 </container>
