@@ -33,12 +33,6 @@ body {
     text-align: center;
 }
 
-.btn {
-    background-color: transparent;
-    color: black;
-    border: 1pt solid lightgray;
-}
-
 .pizza-option-tabs {
     margin: .2em .2em .5em .2em;
     height: 30px;
