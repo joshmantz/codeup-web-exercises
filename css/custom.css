@@ -38,62 +38,10 @@ body {
     height: 30px;
 }
 
-.pizza-option-tabs a{
+.pizza-option-tabs a {
     text-decoration: none;
     color: black;
     border: 1pt solid lightgray;
     align-items: center;
     height: 100%;
-}
-
-h2 {
-    padding: .2em;
-}
-
-.meat-section {
-    margin: .2em;
-}
-
-.meat-selection {
-    background-color: #f2f2f2;
-}
-
-.beef {
-    border: 1pt solid #f2f2f2;
-}
-
-.ham {
-    border: 1pt solid #f2f2f2;
-}
-
-.philly-steak {
-    border: 1pt solid #f2f2f2;
-}
-
-.bacon {
-    border: 1pt solid #f2f2f2;
-}
-
-.non-meat-section {
-    margin: .2em;
-}
-
-.non-meat-selection {
-    background-color: #f2f2f2;
-}
-
-.green-peppers {
-    border: 1pt solid #f2f2f2;
-}
-
-.mushrooms {
-    border: 1pt solid #f2f2f2;
-}
-
-.onions {
-    border: 1pt solid #f2f2f2;
-}
-
-.onions {
-    border: 1pt solid #f2f2f2;
 }
