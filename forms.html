@@ -7,34 +7,34 @@
     <title>Register With Us</title>
 </head>
 
-<!--
-<PASS> 1. Create text fields for email and password with the appropriate placeholder values;
-<PASS> 2. Create a text area named 'bio' for the user to input a brief description about themselves;
-<PASS> 3. How did you hear about us?' section using RADIO BUTTONS with the values of:
-'billboard', 'radio advertisement', 'internet advertisement', 'other'. Only one value can be selected at a time.
-<PASS> 4.Create a dropdown SELECT that asks the user what web browser they are using.
+    <!--
+    <PASS> 1. Create text fields for email and password with the appropriate placeholder values;
+    <PASS> 2. Create a text area named 'bio' for the user to input a brief description about themselves;
+    <PASS> 3. How did you hear about us?' section using RADIO BUTTONS with the values of:
+    'billboard', 'radio advertisement', 'internet advertisement', 'other'. Only one value can be selected at a time.
+    <PASS> 4.Create a dropdown SELECT that asks the user what web browser they are using.
 
-<PASS> 5. Label all for elements.
-<PASS> 6. Include submit buttons. //One submit button is included for the entire form.
-<PASS> 7. Submit values to request inspector.
+    <PASS> 5. Label all for elements.
+    <PASS> 6. Include submit buttons. //One submit button is included for the entire form.
+    <PASS> 7. Submit values to request inspector.
 
-<PASS> 8. Change form's request method from GET to POST and vice versa and observe results.
-        >>When the method is set to 'POST' the HTML query produces a RAW query string separate from all other data;
-        >>When the method is set to 'GET' all of the data is displayed in one block, and a separate query string isnt produced.
+    <PASS> 8. Change form's request method from GET to POST and vice versa and observe results.
+            >>When the method is set to 'POST' the HTML query produces a RAW query string separate from all other data;
+            >>When the method is set to 'GET' all of the data is displayed in one block, and a separate query string isnt produced.
 
-9. What happens if you leave off the NAME attribute from an input? enter response
+    9. What happens if you leave off the NAME attribute from an input? enter response
 
-        >>In a radio form, the NAME attribute is what groups together the radio buttons.
-        >>If you remove the NAME attribute from an input, the input falls out of a relationship with the other inputs.
-        >>On the user side, the button still appears functional, but the input doesn't show up in the query.
-        >>The NAME attribute must be the same for all radio buttons if only one option is to be selected.
+            >>In a radio form, the NAME attribute is what groups together the radio buttons.
+            >>If you remove the NAME attribute from an input, the input falls out of a relationship with the other inputs.
+            >>On the user side, the button is default checked, and more than one option can be selected. The non-named element cannot be unchecked. However, its input does NOT show up in the query.
+            >>The NAME attribute must be the same for all radio buttons if only one option is to be selected.
 
-10. What happens if you leave off the ID attribute from an input?
+    10. What happens if you leave off the ID attribute from an input?
 
-        >>The ID attribute is in a relationship with the LABEL element.
-        >>Removing an ID attribute severs the relationship between the label and ID name.
-        >>Clicking the label text itself no longer activates the radio button. The user must click the circle.
--->
+            >>The ID attribute is in a relationship with the LABEL element.
+            >>Removing an ID attribute severs the relationship between the label and ID name.
+            >>Clicking the label text itself no longer activates the radio button. The user must click the circle itself.
+    -->
 <body>
 <h1>Register with Us</h1>
 <!--Forms have ACTION ("Where is the data going") and METHOD ("How is the data being sent")-->
@@ -48,18 +48,19 @@
     <br>
     <br>
 
-<!--
-Note that the 'name' attribute is associated with the key:pair relationship that appears in PUSH and GET requests;
-for example, when I enter the query string "Check for short bio" inside of the textarea box and submit the form,
-it returns the key pair: ...&shortbio=Check+for+short+bio&...
--->
+    <!--
+    Note that the 'name' attribute seems to be associated with the key:pair relationship that appears in PUSH and GET requests;
+    for example, when I enter the query string "Check for short bio" inside of the textarea box and submit the form, it returns the key pair: ...&shortbio=Check+for+short+bio&...
+    -->
 
-<!--Radio Button Form - One selected at a time: -->
+    <!--Short Bio Text-Area with Label -->
     <label for="shortbio">Short Bio (~250 words for less)</label>
     <textarea id="shortbio" name="shortbio" rows="10" cols="45" placeholder="Enter your bio here"></textarea>
+
     <br>
     <br>
 
+    <!--Radio Button Form - One option selected at a time: -->
     <fieldset>
         <legend>How did you hear about us?</legend>
 
@@ -70,7 +71,8 @@ it returns the key pair: ...&shortbio=Check+for+short+bio&...
             <label for="internetad">Internet Advertisement<input type="radio" name="adsource" id="internetad" value="internetad"></label><br>
         </div>
         <div>
-             <label for="radioad">Radio Advertisement<input type="radio" name="adsource" id="radioad" value="radioad"></label><br>
+            <!--Here, I intentionally left off the ID element 'id="radioad' and all elements of this radio group remain functional, but we lose the relationship between the element and its label. This forces us to click the small checkbox itself. Clicking the text label itself is no longer active. Leaving of the ID can therefore reduce the quality of the user experience. -->
+             <label for="radioad">Radio Advertisement<input type="radio" name="adsource" value="radioad"></label><br>
         </div>
         <div>
              <label for="otherad">Other<input type="radio" name="adsource" id="otherad" value="otherad"></label><br>
@@ -79,7 +81,7 @@ it returns the key pair: ...&shortbio=Check+for+short+bio&...
         <br>
 
 
-<!--Radio Button Form - One selected at a time: -->
+    <!--Checkbox Form - One option selected at a time: -->
     <fieldset>
         <legend>How did you hear about us?</legend>
 
@@ -90,7 +92,8 @@ it returns the key pair: ...&shortbio=Check+for+short+bio&...
             <label for="internetadA">Internet Advertisement<input type="checkbox" name="adsourceA" id="internetadA" value="internetadA"></label><br>
         </div>
         <div>
-            <label for="radioadA">Radio Advertisement<input type="checkbox" name="adsourceA" id="radioadA" value="radioadA"></label><br>
+            <!--Again, I intentionally left off the ID element 'id="radioad' and all elements of this checkbox group remain functional, but we lose the relationship between the element and its label. This forces us to click the small checkbox itself. Clicking the text label itself is no longer active. Leaving of the ID can therefore reduce the quality of the user experience. -->
+            <label for="radioadA">Radio Advertisement<input type="checkbox" name="adsourceA"  value="radioadA"></label><br>
         </div>
         <div>
             <label for="otheradA">Other<input type="checkbox" name="adsourceA" id="otheradA" value="otheradA"></label><br>
