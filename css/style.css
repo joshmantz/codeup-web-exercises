@@ -2,6 +2,11 @@ html * {
     font-family: Verdana, Georgia, sans-serif;
 }
 
+/*Add a style to change the background color of the page.*/
+body {
+    background-color: ghostwhite;
+}
+
 .fancy-header {
     color: purple;
     text-decoration: underline;
@@ -9,6 +14,8 @@ html * {
     font-family: Georgia, Verdana, sans-serif;
 }
 
+/*Add a style to add a background image to your background. Search how to manipulate the position,
+sizing of this background image.*/
 #vision_container {
     background-image: url("/media/pexels-matej-bg-repeat774548.jpg");
     background-size: 25px;
@@ -22,10 +29,6 @@ h3 {
     font-family: Georgia, Verdana, sans-serif;
 }
 
-/*Add a style to change the background color of the page.*/
-body {
-    background-color: ghostwhite;
-}
 
 ul {
     list-style-type: circle;
@@ -46,22 +49,21 @@ tr, td, th {
 }
 
 a:link {
-    color: red;
+    color: darkblue;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+a:active {
+    color: darkred;
 }
 
 a:visited {
-    color: orangered;
+    color: darkgrey;
 }
 
-a.hover {
-    color: orangered;
+.lastpic {
+    width: 100px;
 }
-
-a.active {
-    color: darkslateblue;
-}
-
-/*Add a style to add a background image to your background. Search how to manipulate the position,
-sizing of this background image.
-*/
-

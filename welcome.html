@@ -19,6 +19,8 @@
     </style>
     -->
 
+    <!-- Reference Question 5 (Intro to CSS): What do the above exercises tell you about the precedence of style attributes and embedded and external stylesheets? The more specific a command, the higher the precedence. Specifying code within the HTML element itself takes precedence over CSS. The disadvantage of this, however, is that it makes future edits more challenging because each HTML element must be altered individually, whereas with an external CSS sheet, all elements and classes that are called in the CSS will change all elements associated with that specific class name or element at the same time. -->
+
 </head>
 
 <body>
@@ -26,8 +28,9 @@
 
     <header id="vision_container">
          <!--Use a style attribute to set the font color of the h1 element to red: -->
-         <!--<h1 style="color:red;">Welcome to Veridian Dynamics!</h1>-->
+         <!-- <h1 style="color:red;">Welcome to Veridian Dynamics!</h1> -->
          <h1 class="fancy-header">Welcome to Veridian Dynamics!</h1>
+
          At Veridian Dynamics, <strong>we</strong> solve <i>your</i> problems with <strong><i>technology</i></strong>.
     </header>
     <hr>
@@ -58,37 +61,39 @@
                 </ul>
             </div>
         </div>
-    <BR>
+
+    <br>
     <hr>
 
-    <p>
-        Company Vision:
-    </p>
+    <div><p>Company Vision:</p></div>
 
     <div class="row">
             <div class="column">
                 <img
                         src="/media/corporate1_adobeStock_103995369.jpeg"
-                        alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains."
+                        alt="Two corporate employees overlooking a sunset from a modern corporate office window."
                         style="width:750px; height: 500px"/>
             </div>
             <div class="column">
                 <img
                         src="/media/pexels-abdullah-ghatasheh-1631678.jpg"
-                     alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains."
+                     alt="A sun setting over the ocean."
                         style="width:750px; height: 500px"/>
              </div>
             <div class="column">
                 <img
                         src="/media/pexels-meeting-shakehands-5673488.jpg"
-                        alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains."
+                        alt="Two corporate employees shaking hands after a meeting in a corporate office."
                         style="width: 750px; height: 500px"/>
             </div>
+
+            <!--Here,I intentionally eliminated the embedded HTML styling of the final picture and assigned it a class of 'lastpic.' I then called .lastpic in the external CSS, and gave it an intentionally small width to differentiate it from the other three pictures (all three of which remain styled directly through HTML. This shows the (I) the CSS file works and that (II) if I add back in direct styling to this image, it will override the CSS.  -->
             <div class="column">
-                <img
+                <p>(Note: The following image is intentionally small to demonstrate the difference between inline HTML and the external CSS stylesheet. Please see notes in HTML for further explanation.) </p>
+                <img class="lastpic"
                         src="/media/pexels-mountain-sunset-15336715.jpg"
                         alt="A side-shot of a truck at Death Valley National Park against a landscape of desert and mountains."
-                        style="width:750px"/>
+                        />
             </div>
     <hr>
     </div>
@@ -127,8 +132,3 @@
 
 </body>
 </html>
-
-<!--
-What do the above exercises tell you about the precedence of style attributes and embedded and external stylesheets?
-    >>Precedence is local; the linked stylesheet can be overridden locally. If the local is removed, the styling defaults back to the linked stylesheet.
--->
