@@ -10,19 +10,19 @@ body {
 
 }
 
-h1 {text-align: center;}
+.container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
 
 h2, h3 {
     padding: 0;
     margin: 0;
 }
 
-.container {
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
 
-}
 
 .green-box {
     background: green;
@@ -30,7 +30,9 @@ h2, h3 {
     width: 2em;
 }
 
-.border {border: 2px solid black;}
+.border {
+    border: 2px solid black;
+}
 
 .card {
     width: 400px;
