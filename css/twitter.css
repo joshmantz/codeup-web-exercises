@@ -32,6 +32,7 @@ a {
     padding: 1.5em;
     width: 100%;
     position: fixed;
+    /*According to the MDN, "Overlapping elements with a larger z-index cover those with a smaller one."*/
     z-index: 1000;
 }
 
@@ -98,6 +99,7 @@ a {
 
 .who-to-follow {
     float: right;
+    /*According to the MDN, "The + and - operators must be surrounded by whitespace" in order to work. */
     width: calc(25% - 1em);
     margin: 0 .5em .5em 0;
     border: 1pt solid black;
