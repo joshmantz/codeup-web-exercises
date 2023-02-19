@@ -1,50 +1,16 @@
-body, html {
-    height: 95%;
-    width: 95%;
-    padding: 1em;
-    margin: 0;
+html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
-/*
-According to the MDN, its a best practice to declare custom properties on the :root pseudo-class
-so that it can be applied globally across the HTML document.
-*/
-
-:root {
-    --the-color-of-information: lightblue;
-}
-
-:root {
-    --the-color-of-success:lightgreen;
-}
-
-:root {
-    --the-color-of-warnings: lightyellow;
-}
-
-:root {
-    --the-color-of-errors: lightpink;
-}
-
 body {
+    height: 95%;
+    width: 95%;
     margin: .5em;
-    border-style: solid;
-    border-width: 1pt;
-    border-color: black;
+    padding: 1em;
 }
 
-.message {
-    margin: .5em;
-    padding: 7px;
-    border-style: solid;
-    border-width: 1pt;
-    border-color: black;
-    border-radius: 7px;
-}
+/*Coded with direct color inputs. See below for a solution using color variables*/
 
-
-/*Coded with direct color inputs*/
 /*
 .message-info {
     background-color: lightblue;
@@ -63,7 +29,39 @@ body {
 }
 */
 
-/*Coded using color variables:*/
+.message {
+    margin: .5em;
+    padding: 7px;
+    border-style: solid;
+    border-width: 1pt;
+    border-color: black;
+    border-radius: 7px;
+}
+
+/*ALTERNATIVE SOLUTIONS (BONUS)*/
+
+/*
+According to the MDN, its a best practice to declare custom properties on the :root pseudo-class
+so that it can be applied globally across the HTML document: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+*/
+
+/*CODED USING COLOR VARIABLES*/
+
+:root {
+    --the-color-of-information: lightblue;
+}
+
+:root {
+    --the-color-of-success:lightgreen;
+}
+
+:root {
+    --the-color-of-warnings: lightyellow;
+}
+
+:root {
+    --the-color-of-errors: lightpink;
+}
 
 .message-info {
     background-color: var(--the-color-of-information);
@@ -80,4 +78,3 @@ body {
 .message-error {
     background-color: var(--the-color-of-errors);
 }
-
