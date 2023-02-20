@@ -5,60 +5,77 @@
 }
 
 html {
-    height: 100%;
-    background-color: lightcoral;
-    border: 3pt solid red;
+
 }
 
 body {
-    width: 100%;
     min-height: 100vh;
-    font-family: Nunito Sans, Georgia, sans-serif;
-    font-size: 12pt;
+    margin: auto 12px auto 12px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: lightsalmon;
-    border: 3pt solid black;
 }
 
-a {
-    border: 1pt solid black;
-    background-color: lightgrey;
-    font-size: 9pt;
-    text-decoration: none;
+
+h1 {
+   text-align: center;
+}
+
+.nav {
 }
 
 ul {
     list-style-type: none;
-    border: 1pt solid purple;
-    width: 350px;
 }
 
-
-
-.alert-info {
-
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hidden-on-desktop {
-
-}
-
-.nav-links {
-
+.nav-links li {
+    background-color: lightgray;
+    text-align: center;
+    margin: 7px 0 7px 0;
+    height: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .header-img {
+    display: flex;
+    justify-content: center;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .main {
-
+    margin: 21px 0 21px 0;
 }
 
 .sub-section {
-
+    font-style: italic;
+    margin: 21px 0 7px 0;
+}
+/*When the body elements is set to flex and a min-height of 100vh, this line of code keep the footer sticking to the bottom of the page.*/
+footer {
+    margin-top: auto;
 }
 
+.hidden-on-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1pt solid lightgray;
+    width: 100%;
+    height: 30px;
+}
+
+@media screen and (min-width: 576px) {
+    .hidden-on-desktop {
+        display: none;
+    }
+}
