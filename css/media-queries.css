@@ -48,8 +48,9 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    margin-top: 7px;
 }
 
 .main {
@@ -75,7 +76,49 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
+
     .hidden-on-desktop {
         display: none;
     }
+
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-links li {
+        background-color: transparent;
+    }
+
+    h1 {
+        text-align: left;
+        position: relative;
+        top: 35px
+
+    }
+
+    .nav-links a {
+        margin: 5pt;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .sub-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 40%;
+        margin: 0px 0 35px 0;
+    }
+
+    .main-sub-group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
 }
