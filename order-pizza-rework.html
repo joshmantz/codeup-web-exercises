@@ -144,55 +144,51 @@
             <!--Second tab pane--><!--Add back d-flex flex-column align-items-center-->
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-                <!--First card, First Tab-->
+                <!--Second card, First Tab-->
                 <div class="card" style="width: 100%;">
 
                     <h6 class="tab-headers">Choose Cheese and Sauce</h6>
                     <!--First card body, First Tab-->
                     <div class="card-body">
                         <div class="card-header">
-                            Hand-Tossed
+                            Cheese
                         </div>
 
-                        <div class="card-header bg bg-transparent border border-light border-3 fst-italic">Garlic-seasoned with a rich, buttery taste
+                        <div class="card-header bg bg-transparent border border-light border-3 fst-italic">How much?
                         </div>
 
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <input class="form-check-input me-1" type="radio" name="size"  value="" aria-label="...">
-                                Small (10")
-                            </li>
-                            <li class="list-group-item">
-                                <input class="form-check-input me-1" type="radio" name="size"  value="" aria-label="...">
-                                Medium (12")
-                            </li>
-                        </ul>
+                        <!--Cheese selection dropdown menu-->
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Normal</option>
+                            <option value="1">Extra</option>
+                            <option value="2">Double</option>
+                        </select>
+
                     </div>
 
                     <!--Second card body, First Tab-->
                     <div class="card-body">
                         <div class="card-header">
-                            Crispy Thin
+                            Sauce
                         </div>
 
-                        <div class="card-header bg bg-transparent border border-light border-3 fst-italic">Thin enough for optimum crispy to crunchy ratio
+                        <div class="card-header bg bg-transparent border border-light border-3 fst-italic">What Type?
                         </div>
 
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <input class="form-check-input me-1" type="radio" name="size" value="" aria-label="...">
-                                Medium (12")
-                            </li>
-                            <li class="list-group-item">
-                                <input class="form-check-input me-1" type="radio" name="size" value="" aria-label="...">
-                                Large (14")
-                            </li>
-                        </ul>
+                        <!--Cheese selection dropdown menu-->
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Tomato</option>
+                            <option value="1">Marinara</option>
+                            <option value="2">BBQ</option>
+                            <option value="2">Alfredo</option>
+                        </select>
+
                     </div>
 
                     <!--Second Card Footer with Button-->
                     <div class="card-footer text-muted d-flex justify-content-end">
-                        <a href="#" class="btn btn-primary">Button II</a>
+                        <a href="#" class="btn btn-primary">Previous</a>
+                        <a href="#" class="parse btn btn-primary">Next</a>
                     </div>
                 </div>
             </div>
