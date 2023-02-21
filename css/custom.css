@@ -67,3 +67,7 @@ h2 {
     max-height: 21px;
     max-width: 21px;
 }
+
+.card-header {
+    padding-left: 0;
+}
