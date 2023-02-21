@@ -62,3 +62,8 @@ h2 {
 .parse {
     margin-left: 2pt;
 }
+
+.shopping-cart {
+    max-height: 21px;
+    max-width: 21px;
+}
