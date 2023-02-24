@@ -1,23 +1,22 @@
 "use strict";
 
+//Exercise A:
 console.log("Hello from external JS");
 
-// WELCOME MESSAGE:
-alert("Welcome to my website!");
+//EXERCISE B-I: Welcome Message:
+//alert("Welcome to my website!");
 
-//COLORS:
-//The following section prompts users for their favorite color
-//and then responds with an alert message to the user.
+//EXERCISE B-II (Colors):
+//The following section prompts users for their favorite color responds with an alert message to the user:
+//Uncomment the following three lines of code to activate the function:
 
-var userInput = prompt('What is your favorite color?');
-console.log('The user entered: ' + userInput);
-alert("Wow, " +userInput + " " + "is my favorite color too!");
+//var userInput = prompt('What is your favorite color?');
+//console.log('The user\'s favorite color is: ' + userInput);
+//alert("Wow, " +userInput + " " + "is my favorite color too!");
 
-//QUESTION III PART I (MOVIE RENTAL CALCULATION)
+//EXERCISE C-I (Movie Rental Calculation):
 //The following section gathers data from the user and calculates their total rental price for movies:
-
-//This line asks the user if they have any movies to pay for:
-var hasMovie = confirm('You\'ve arrived at the movie rental counter. Do you have any rental movies you\'d like to pay for today?');
+var hasMovie = confirm('You\'ve arrived at the movie rental counter. Do you have any rental movies you\'d like to pay for today? Please click \'ok\' for \'yes\' or \'cancel\' for \'no\'.');
 
 //Data associated with the first movie rental:
 var movieOneName = prompt('What is the name of the first movie you rented?');
@@ -43,7 +42,7 @@ console.log(movieThreeDaysRented);
 var pricePerDay = 3;
 
 var totalPrice = (movieOneDaysRented*pricePerDay) + (movieTwoDaysRented*pricePerDay) + (movieThreeDaysRented*pricePerDay);
-alert("Your total today is " + totalPrice + ". ");
+alert("Your total today is $" + totalPrice.toFixed(2) + ". ");
 
 //The following section of code gathers data from the user and calculates their weekly payment total:
 var didWork =confirm('Now lets check to see you you made enough money this week to cover the bill! Did you work anywhere this week?');
