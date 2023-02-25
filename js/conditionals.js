@@ -2,44 +2,40 @@
 console.log("The src file `conditionals.js` is successfully linked");
 /* ########################################################################## */
 
-/**
- * TODO:
- * Create a function named `analyzeColor` that accepts a string that is a color
- * name as input. This function should return a message which relates to the
- * color stated in the argument of the function. For colors you do not have
- * responses written for, return a string stating so
- *
- * Example:
- *  > analyzeColor('blue') // returns "blue is the color of the sky"
- *  > analyzeColor('red') // returns "Strawberries are red"
- *
- *
- *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
- *
- * You should use an if-else-if-else block to return different messages.
- *
- * Test your function by passing various string literals to it and
- * console.logging the function's return value
- */
 
 /*
 //THE FIRST EXERCISE:
+//* TODO:
+//* Create a function named `analyzeColor` that accepts a string that is a color
+//* name as input. This function should return a message which relates to the
+//* color stated in the argument of the function. For colors you do not have
+//* responses written for, return a string stating so
+//*
+//* Example:
+//*  > analyzeColor('blue') // returns "blue is the color of the sky"
+//*  > analyzeColor('red') // returns "Strawberries are red"
+//*  > analyzeColor('cyan') // returns "I don't know anything about cyan"
+//*
+//* You should use an if-else-if-else block to return different messages.
+//*
+//* Test your function by passing various string literals to it and
+//* console.logging the function's return value
 
-//THIS FUNCTION TAKES A STRING INPUT AND CONVERTS IT TO LOWERCASE, THEN RUNS AN IF-ELSE STATEMENT;
-function analyzeColor(colorName){
+function analyzeColor(colorName) {
     var colorNameLower = colorName.toLowerCase();
     console.log(colorNameLower);
 
-    if (colorNameLower === "blue"){
+    if (colorNameLower === "blue") {
         alert("Blue is the color of the sky.");
+
     }else if (colorNameLower === "red"){
         alert("Strawberries are red.");
+
     }else {
-        alert("I don't have any words to describe " + colorName + ".");
+        alert("I don't have any words to describe the color " + colorName + ".");
     }
     console.log("Function Complete");
 }
-
 //END OF THE FIRST EXERCISE:
 */
 
@@ -216,7 +212,7 @@ console.log(luckyNumber);
 */
 
 
-
+/*
 //THE SEVENTH EXERCISE:
 //* TODO:
 //* Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -263,4 +259,4 @@ if (inputNumber){
 }
 
 //END OF THE SEVENTH EXERCISE:
-
+*/
