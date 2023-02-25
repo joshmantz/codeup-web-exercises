@@ -22,11 +22,10 @@ console.log("The src file `conditionals.js` is successfully linked");
  * console.logging the function's return value
  */
 
-
+/*
 //THE FIRST EXERCISE:
 
 //THIS FUNCTION TAKES A STRING INPUT AND CONVERTS IT TO LOWERCASE, THEN RUNS AN IF-ELSE STATEMENT;
-
 function analyzeColor(colorName){
     var colorNameLower = colorName.toLowerCase();
     console.log(colorNameLower);
@@ -41,9 +40,14 @@ function analyzeColor(colorName){
     console.log("Function Complete");
 }
 
-//END OF THE FIRST EXERCISE
+//END OF THE FIRST EXERCISE:
+*/
 
 
+
+
+/*
+//THE SECOND EXERCISE
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -59,70 +63,77 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-//THE SECOND EXERCISE
+/*
 
 var colorOutput = analyzeColor(randomColor);
 console.log(colorOutput);
 
-
-//END OF THE SECOND EXERCISE
-
-/**
- * TODO:
- * Comment out the code above, and refactor your function to use a switch-case statement
- */
-
-//THE THIRD EXERCISE:
-//The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate the prompt:
-//var colorChoice = prompt("Please input a color:");
-
-var colorChoice = randomColor;
-console.log(colorChoice);
-
-//The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate prompt.
-//var colorChoiceLowercase = colorChoice.toLowerCase();
-
-var colorChoiceLowercase = randomColor.toLowerCase();
-console.log(colorChoiceLowercase);
-
-switch(colorChoiceLowercase){
-    case "blue":
-        alert("Blue is the color of the sky.");
-        break;
-    case "red":
-        alert("Strawberries are red.")
-        break;
-    default:
-        alert("I don't have any words to describe " + colorChoiceLowercase + ".");
-        break;
-}
-
-//END OF THE THIRD EXERCISE
-
-/**
- * TODO:
- * Prompt the user for a color when the page loads, and pass the input from the
- * user to your `analyzeColor` function. Alert the return value from your
- * function to show it to the user.
- */
-
-//THE FOURTH EXERCISE:
-// This runs the analyzeColor function with a user prompt:
-/*
-var colorChoice = prompt("Please input a color:");
-console.log(colorChoice);
-
-var colorChoiceLowercase = colorChoice.toLowerCase();
-console.log(colorChoiceLowercase);
-
-alert(analyzeColor(colorChoiceLowercase));
-
+//END OF THE SECOND EXERCISE:
 */
 
-//END OF THE FOURTH EXERCISE
-/* ########################################################################## */
 
-/**
+
+
+
+/*
+//THE THIRD EXERCISE:
+    //
+    //* TODO:
+    //* Comment out the code above, and refactor your function to use a switch-case statement
+    //
+
+    //The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate the prompt:
+    //var colorChoice = prompt("Please input a color:");
+
+    var colorChoice = randomColor;
+    console.log(colorChoice);
+
+    //The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate prompt.
+    //var colorChoiceLowercase = colorChoice.toLowerCase();
+
+    var colorChoiceLowercase = randomColor.toLowerCase();
+    console.log(colorChoiceLowercase);
+
+    switch(colorChoiceLowercase){
+        case "blue":
+            alert("Blue is the color of the sky.");
+            break;
+        case "red":
+            alert("Strawberries are red.")
+            break;
+        default:
+            alert("I don't have any words to describe " + colorChoiceLowercase + ".");
+            break;
+    }
+//END OF THE THIRD EXERCISE:
+ */
+
+
+
+/*
+//THE FOURTH EXERCISE:
+
+     //* TODO:
+     //* Prompt the user for a color when the page loads, and pass the input from the
+     //* user to your `analyzeColor` function. Alert the return value from your
+     //* function to show it to the user.
+
+    // This runs the analyzeColor function with a user prompt:
+
+    var colorChoice = prompt("Please input a color:");
+    console.log(colorChoice);
+
+    var colorChoiceLowercase = colorChoice.toLowerCase();
+    console.log(colorChoiceLowercase);
+
+    alert(analyzeColor(colorChoiceLowercase));
+
+//END OF THE FOURTH EXERCISE:
+// ##########################################################################
+*/
+
+/*
+THE FIFTH EXERCISE:
  * TODO:
  * Suppose there's a promotion in Walmart, each customer is given a randomly
  * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
@@ -140,12 +151,8 @@ alert(analyzeColor(colorChoiceLowercase));
  *
  * Test your function by passing it various values and checking for the expected
  * return value.
- */
 
-//THE FIFTH EXERCISE:
-
-/*
-function calculateTotal(totalAmount, luckyNumber){
+function calculateTotal (totalAmount, luckyNumber){
     switch(luckyNumber){
         case 1:
             var firstResult = (totalAmount-(totalAmount*0.1));
@@ -177,21 +184,24 @@ function calculateTotal(totalAmount, luckyNumber){
             console.log(otherResult);
             alert ("Your original bill was $" + totalAmount + " and your lucky number is " + luckyNumber + " for a final bill of " + otherResult);
             break;
-
     }
 }
+//END OF THE FIFTH EXERCISE:
 */
 
-/**
- * TODO:
- * Uncomment the line below to generate a random number between 0 and 5.
- * (In this line of code, 0 is inclusive, and 6 is exclusive)
- * Prompt the user for their total bill, then use your `calculateTotal` function
- * and alerts to display to the user what their lucky number was, what their
- * price before the discount was, and what their price after the discount is.
- */
 
 /*
+//THE SIXTH EXERCISE:
+
+    //* TODO:
+    //* Uncomment the line below to generate a random number between 0 and 5.
+    //* (In this line of code, 0 is inclusive, and 6 is exclusive)
+    //* Prompt the user for their total bill, then use your `calculateTotal` function
+    //* and alerts to display to the user what their lucky number was, what their
+    //* price before the discount was, and what their price after the discount is.
+
+
+
 //Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 
@@ -201,56 +211,56 @@ console.log(totalBill)
 calculateTotal(totalBill, luckyNumber);
 console.log(totalBill);
 console.log(luckyNumber);
+
+//END OF THE SIXTH EXERCISE:
 */
 
-/**
- * TODO:
- * Write some JavaScript that uses a `confirm` dialog to ask the user if they
- * would like to enter a number. If they click 'Ok', prompt the user for a
- * number, then use 3 separate alerts to tell the user:
- *
- * - whether the number is even or odd
- * - what the number plus 100 is
- * - if the number is negative or positive
- *
- * Do *NOT* display any of the above information
- * if the user enters a value that is not of the number data type.
- * Instead, use an alert to inform them of the incorrect input data type.
- *
- *
- * Can you refactor your code to use functions?
- * HINT: The way we prompt for a value could be improved
- */
+
+
+//THE SEVENTH EXERCISE:
+//* TODO:
+//* Write some JavaScript that uses a `confirm` dialog to ask the user if they
+//* would like to enter a number. If they click 'Ok', prompt the user for a
+//* number, then use 3 separate alerts to tell the user:
+//* - whether the number is even or odd
+//* - what the number plus 100 is
+//* - if the number is negative or positive
+//*
+//* Do *NOT* display any of the above information
+//* if the user enters a value that is not of the number data type.
+//* Instead, use an alert to inform them of the incorrect input data type.
+//*
+//*
+//* Can you refactor your code to use functions?
+//* HINT: The way we prompt for a value could be improved
+
 
 var inputNumber = confirm("Would you like to enter a number?");
 console.log(inputNumber);
 
 if (inputNumber){
     var numChoice = prompt("Please input a number:");
-    console.log(parseFloat(numChoice));
-}
-
-console.log(numChoice);
-
-//FUNCTION I
-function isEven (numChoice) {
-    if ((numChoice % 2) === 0) {
-        alert(numChoice + " is an even number.");
+    if (isNaN(numChoice)) {
+        alert ("The value you entered is not a number. Please try again with a numerical value.");
     } else {
-        alert(numChoice + " is an odd number.");
+        if (numChoice % 2 === 0) {
+            alert(numChoice + " is an even number.");
+
+        } else {
+            alert(numChoice + " is an odd number.");
+        }
+
+        alert(numChoice + "+ 100 = " + (parseFloat(numChoice) + Number(100)));
+
+        if (numChoice >= 0) {
+            alert(numChoice + " is a positive number.");
+        } else {
+            alert(numChoice + " is a negative number");
+        }
     }
+} else {
+    alert("This operation has been cancelled.");
 }
 
-//FUNCTION II
-function add100(numChoice){
-    alert("Your number plus 100 equals " + (numChoice+100) + ".");
-}
+//END OF THE SEVENTH EXERCISE:
 
-//FUNCTION III
-function isPositive(numChoice){
-    if (numChoice >= 0){
-        alert("Your number is positive.");
-    } else {
-        alert("Your number is negative.");
-    }
-}
