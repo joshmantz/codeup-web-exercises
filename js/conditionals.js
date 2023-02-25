@@ -48,18 +48,14 @@ function analyzeColor(colorName) {
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
-//                  will contain a different color every time the page loads)
+// will contain a different color every time the page loads)
 
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
-/**
- * TODO:
- * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
- * You should see a different message every time you refresh the page
- */
-
-/*
+// TODO:
+// Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
+// You should see a different message every time you refresh the page
 
 var colorOutput = analyzeColor(randomColor);
 console.log(colorOutput);
@@ -73,22 +69,19 @@ console.log(colorOutput);
 
 /*
 //THE THIRD EXERCISE:
-    //
-    //* TODO:
-    //* Comment out the code above, and refactor your function to use a switch-case statement
-    //
+// TODO:
+// Comment out the code above, and refactor your function to use a switch-case statement
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
-    //The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate the prompt:
-    //var colorChoice = prompt("Please input a color:");
+//var colorChoice = prompt("Please input a color:");
 
-    var colorChoice = randomColor;
-    console.log(colorChoice);
+var colorChoice = randomColor;
+console.log(colorChoice);
+//var colorChoiceLowercase = colorChoice.toLowerCase();
 
-    //The following  line is commented-out to remove the prompt and allow for 'random' to pass as the variable; uncomment the following line to recreate prompt.
-    //var colorChoiceLowercase = colorChoice.toLowerCase();
-
-    var colorChoiceLowercase = randomColor.toLowerCase();
-    console.log(colorChoiceLowercase);
+var colorChoiceLowercase = randomColor.toLowerCase();
+console.log(colorChoiceLowercase);
 
     switch(colorChoiceLowercase){
         case "blue":
@@ -102,8 +95,7 @@ console.log(colorOutput);
             break;
     }
 //END OF THE THIRD EXERCISE:
- */
-
+*/
 
 
 /*
