@@ -3,7 +3,7 @@ console.log("The src file `conditionals.js` is successfully linked");
 /* ########################################################################## */
 
 
-/*
+
 //THE FIRST EXERCISE:
 //* TODO:
 //* Create a function named `analyzeColor` that accepts a string that is a color
@@ -23,7 +23,6 @@ console.log("The src file `conditionals.js` is successfully linked");
 
 function analyzeColor(colorName) {
     var colorNameLower = colorName.toLowerCase();
-    console.log(colorNameLower);
 
     if (colorNameLower === "blue") {
         alert("Blue is the color of the sky.");
@@ -34,10 +33,9 @@ function analyzeColor(colorName) {
     }else {
         alert("I don't have any words to describe the color " + colorName + ".");
     }
-    console.log("Function Complete");
 }
 //END OF THE FIRST EXERCISE:
-*/
+
 
 
 
@@ -98,27 +96,21 @@ console.log(colorChoiceLowercase);
 */
 
 
-/*
+
 //THE FOURTH EXERCISE:
 
-     //* TODO:
-     //* Prompt the user for a color when the page loads, and pass the input from the
-     //* user to your `analyzeColor` function. Alert the return value from your
-     //* function to show it to the user.
+//* TODO:
+//* Prompt the user for a color when the page loads, and pass the input from the
+//* user to your `analyzeColor` function. Alert the return value from your
+//* function to show it to the user.
 
-    // This runs the analyzeColor function with a user prompt:
-
-    var colorChoice = prompt("Please input a color:");
-    console.log(colorChoice);
-
-    var colorChoiceLowercase = colorChoice.toLowerCase();
-    console.log(colorChoiceLowercase);
-
-    alert(analyzeColor(colorChoiceLowercase));
+var colorChoice = prompt("Please input a color:");
+analyzeColor(colorChoice);
+console.log(colorChoice);
 
 //END OF THE FOURTH EXERCISE:
 // ##########################################################################
-*/
+
 
 /*
 THE FIFTH EXERCISE:
