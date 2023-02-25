@@ -119,7 +119,7 @@ console.log(colorChoice);
 
 
 
-
+/*
 //THE FIFTH EXERCISE:
 //* TODO:
 //* Suppose there's a promotion in Walmart, each customer is given a randomly
@@ -174,29 +174,29 @@ function calculateTotal (totalAmount, luckyNumber){
     }
 }
 //END OF THE FIFTH EXERCISE:
-
+*/
 
 
 /*
 //THE SIXTH EXERCISE:
 
-    //* TODO:
-    //* Uncomment the line below to generate a random number between 0 and 5.
-    //* (In this line of code, 0 is inclusive, and 6 is exclusive)
-    //* Prompt the user for their total bill, then use your `calculateTotal` function
-    //* and alerts to display to the user what their lucky number was, what their
-    //* price before the discount was, and what their price after the discount is.
+//Note: I continue to get an error that 'totalAmount.toFixed() is not a function when calling the function below. However, the numbers are logging correctly and the function works above when providing a direct input. I'm not sure how to resolve this without removing the .toFixed, which I could do, but that would ruin the number format output that I'm tyring to achieve.
 
-
+//* TODO:
+//* Uncomment the line below to generate a random number between 0 and 5.
+//* (In this line of code, 0 is inclusive, and 6 is exclusive)
+//* Prompt the user for their total bill, then use your `calculateTotal` function
+//* and alerts to display to the user what their lucky number was, what their
+//* price before the discount was, and what their price after the discount is.
 
 //Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
-
 var totalBill = prompt("Please enter the total amount of your bill:");
-console.log(totalBill)
+var totalAmount=Number(totalBill).toFixed(2);
+console.log(totalAmount)
 
-calculateTotal(totalBill, luckyNumber);
-console.log(totalBill);
+calculateTotal(totalAmount, luckyNumber);
+console.log(totalAmount);
 console.log(luckyNumber);
 
 //END OF THE SIXTH EXERCISE:
