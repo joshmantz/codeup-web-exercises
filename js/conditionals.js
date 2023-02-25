@@ -3,7 +3,7 @@ console.log("The src file `conditionals.js` is successfully linked");
 /* ########################################################################## */
 
 
-
+/*
 //THE FIRST EXERCISE:
 //* TODO:
 //* Create a function named `analyzeColor` that accepts a string that is a color
@@ -35,7 +35,7 @@ function analyzeColor(colorName) {
     }
 }
 //END OF THE FIRST EXERCISE:
-
+*/
 
 
 
@@ -97,8 +97,10 @@ console.log(colorChoiceLowercase);
 
 
 
-//THE FOURTH EXERCISE:
 
+
+/*
+//THE FOURTH EXERCISE:
 //* TODO:
 //* Prompt the user for a color when the page loads, and pass the input from the
 //* user to your `analyzeColor` function. Alert the return value from your
@@ -110,64 +112,69 @@ console.log(colorChoice);
 
 //END OF THE FOURTH EXERCISE:
 // ##########################################################################
+*/
 
 
-/*
-THE FIFTH EXERCISE:
- * TODO:
- * Suppose there's a promotion in Walmart, each customer is given a randomly
- * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
- * no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
- * the discount is 25%, if it's 3, 35%, if it's 4, 50%, and if it's 5 you'll get
- * everything for free!.
- *
- * Write a function named `calculateTotal` which accepts a lucky number and total
- * amount, and returns the discounted price.
- *
- * Example:
- * calculateTotal(0, 100) // returns 100
- * calculateTotal(4, 100) // returns 50
- * calculateTotal(5, 100) // returns 0
- *
- * Test your function by passing it various values and checking for the expected
- * return value.
+
+
+
+
+
+//THE FIFTH EXERCISE:
+//* TODO:
+//* Suppose there's a promotion in Walmart, each customer is given a randomly
+//* generated "lucky number" between 0 and 5. If your lucky number is 0 you have
+//* no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
+//* the discount is 25%, if it's 3, 35%, if it's 4, 50%, and if it's 5 you'll get
+//* everything for free!.
+//*
+//* Write a function named `calculateTotal` which accepts a lucky number and total
+//* amount, and returns the discounted price.
+//*
+//* Example:
+//* calculateTotal(0, 100) // returns 100
+//* calculateTotal(4, 100) // returns 50
+//* calculateTotal(5, 100) // returns 0
+//*
+//* Test your function by passing it various values and checking for the expected
+//* return value.
 
 function calculateTotal (totalAmount, luckyNumber){
     switch(luckyNumber){
         case 1:
             var firstResult = (totalAmount-(totalAmount*0.1));
             console.log(firstResult);
-            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + firstResult);
+            alert ("Your original bill was $" + totalAmount.toFixed(2) + " and your lucky number is " + luckyNumber + " for a final payment due of $" + firstResult.toFixed(2) + '.');
             break;
         case 2:
             var secondResult = (totalAmount-(totalAmount*0.25));
             console.log(secondResult);
-            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + secondResult);
+            alert ("Your original bill was $" + totalAmount.toFixed(2) + " and your lucky number is " + luckyNumber + " for a final payment due of $" + secondResult.toFixed(2) + '.');
             break;
         case 3:
             var thirdResult = (totalAmount-(totalAmount*0.35));
             console.log(thirdResult);
-            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + thirdResult);
+            alert ("Your original bill was $" + totalAmount.toFixed(2) + " and your lucky number is " + luckyNumber + " for a final payment due of $" + thirdResult.toFixed(2) + '.');
             break;
         case 4:
             var fourthResult = (totalAmount-(totalAmount*0.5));
             console.log(fourthResult);
-            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + fourthResult);
+            alert ("Your original bill was $" + totalAmount.toFixed(2) + " and your lucky number is " + luckyNumber + " for a final payment due of $" + fourthResult.toFixed(2) + '.');
             break;
         case 5:
-            var fifthResult = (totalAmount-(totalAmount*0))
+            var fifthResult = (totalAmount*0);
             console.log(fifthResult);
-            alert ("Your original bill was " + totalAmount + " and your lucky number is " + luckyNumber + " for a final payment due of " + fifthResult);
+            alert ("Your original bill was $" + totalAmount.toFixed(2) + " and your lucky number is " + luckyNumber + " for a final payment due of $" + fifthResult.toFixed(2) + '.');
             break;
         default:
             var otherResult = (totalAmount-(totalAmount*0));
             console.log(otherResult);
-            alert ("Your original bill was $" + totalAmount + " and your lucky number is " + luckyNumber + " for a final bill of " + otherResult);
+            alert ("Your original bill was $" + totalAmount.toFixed(2) + " and your (un)lucky number is " + luckyNumber + " for a final payment due of $" + otherResult.toFixed(2) + '. Although you may be disappointed, we appreciate your business wish you better luck next time!');
             break;
     }
 }
 //END OF THE FIFTH EXERCISE:
-*/
+
 
 
 /*
