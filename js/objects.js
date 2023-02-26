@@ -1,6 +1,5 @@
 /*
 (function() {
-
 */
 
 
@@ -38,7 +37,7 @@
 
     person.sayHello = function() {
         console.log("Hello from " + person.firstName + " " + person.lastName + "!");
-    }
+    };
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -212,7 +211,7 @@
             console.log("Title: " + book.title);
             console.log("Author " + book.author.firstName + " " + book.author.lastName);
         })
-        };
+        }
 
     /**
      * Bonus:
@@ -224,6 +223,42 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook (title, first, last) {
+        return {
+            title: title,
+            author: {
+                firstName: first,
+                lastName: last
+            }
+        }
+    }
+
+    var libraryArray = [
+        createBook("Memories, Dreams, Reflections", "Carl", "Jung"),
+        createBook("The Structure of Scientific Revolutions", "Thomas", "Kuhn"),
+        createBook("Saving the Appearances", "Owen", "Barfield"),
+        createBook("Holotropic Breathwork", "Stanislav", "Grof"),
+        createBook("Journey of the Universe", "Brian", "Swimme")
+    ];
+
+    var newEntryTitle = prompt("Please enter a book title");
+    var newEntryAuthorFirst = prompt("Please enter the author\'s first name.");
+    var newEntryAuthorLast = prompt("Please enter the author\'s last name.");
+
+    libraryArray.push(createBook(newEntryTitle, newEntryAuthorFirst, newEntryAuthorLast));
+
+    function showBookInfo(book) {
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    }
+
+    libraryArray.forEach(function(book, index) {
+        console.log("Book # " + (index +1));
+        showBookInfo(book);
+    })
+
+
 /*
 })();
 */
