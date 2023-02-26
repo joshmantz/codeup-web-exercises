@@ -93,7 +93,95 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    /**
+    var books = [
+        {
+            title: 'The City of God',
+            author: {
+                firstName: 'Saint',
+                lastName: 'Augustine',
+            },
+        },
+
+        {
+            title: 'The Creative Mind',
+            author: {
+                firstName: 'Henri',
+                lastName: 'Bergson',
+            },
+        },
+
+        {
+            title: 'The Perennial Philosophy',
+            author: {
+                firstName: 'Aldous',
+                lastName: 'Huxley',
+            },
+        },
+
+        {
+            title: 'The Red Book',
+            author: {
+                firstName: 'Carl',
+                lastName: 'Jung',
+            },
+        },
+
+        {
+            title: 'Towards a Psychology of Being',
+            author: {
+                firstName: 'Abraham',
+                lastName: 'Maslow',
+            },
+        },
+
+        {
+            title: 'Psychology of the Future',
+            author: {
+                firstName: 'Stanislav',
+                lastName: 'Grof',
+            },
+        },
+
+        {
+            title: 'The Hero with a Thousand Faces',
+            author: {
+                firstName: 'Joseph',
+                lastName: 'Campbell',
+            },
+        },
+
+        ];
+
+        console.log(books[0].title);
+        console.log(books[0].author.firstName);
+        console.log(books[0].author.lastName);
+
+        console.log(books[1].title);
+        console.log(books[1].author.firstName);
+        console.log(books[1].author.lastName);
+
+        console.log(books[2].title);
+        console.log(books[2].author.firstName);
+        console.log(books[2].author.lastName);
+
+        console.log(books[3].title);
+        console.log(books[3].author.firstName);
+        console.log(books[3].author.lastName);
+
+        console.log(books[4].title);
+        console.log(books[4].author.firstName);
+        console.log(books[4].author.lastName);
+
+        console.log(books[5].title);
+        console.log(books[5].author.firstName);
+        console.log(books[5].author.lastName);
+
+        console.log(books[6].title);
+        console.log(books[6].author.firstName);
+        console.log(books[6].author.lastName);
+
+
+/**
      * TODO:
      * Loop through the books array and output the following information about
      * each book:
@@ -117,6 +205,14 @@
      *      ---
      *      ...
      */
+
+    function bookList (books) {
+        books.forEach(function (book, index) {
+            console.log("Book # " + (index + 1));
+            console.log("Title: " + book.title);
+            console.log("Author " + book.author.firstName + " " + book.author.lastName);
+        })
+        };
 
     /**
      * Bonus:
