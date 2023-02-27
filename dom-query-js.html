@@ -8,11 +8,11 @@
 
 <h1 id="main-header">Hello World!</h1>
 <ul>
-    <li data-dbid="1">Item 1</li>
+    <li class="odd" data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
-    <li data-dbid="3">Item 3</li>
+    <li class="odd" data-dbid="3">Item 3</li>
     <li data-dbid="4">Item 4</li>
-    <li data-dbid="5">Item 5</li>
+    <li class="odd" data-dbid="5">Item 5</li>
 </ul>
 <h2 id="sub-header">Hello Again.</h2>
 <p class="sub-paragraph">
@@ -38,7 +38,7 @@
         var subHeader = document.getElementById('sub-header');
 
         // TODO: Set the text color of subHeader to blue
-        subHeader.style ['color'] = '#FFD580';
+        subHeader.style.color = '#FFD580';
 
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName('li');
@@ -49,10 +49,15 @@
 
         // TODO: Set text color on every other list item to grey
 
-
+        var oddList = document.getElementsByClassName('odd');
+        console.log(oddList); //verifies that the three odd list items are being returned.
+        //oddList.style['color'] = 'red'; //currently returns 'undefined'
+        for (var i=0; i<oddList.length; i++) {
+            oddList[i].style.color = "red";
+        }
 
         // TODO: Set text color of li with dbid = 1 to blue
-        //listItems[]
+        oddList[0].style.color = "blue";
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName('sub-paragraph');
