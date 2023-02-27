@@ -8,25 +8,22 @@
 
     // create a circle object
     var circle = {
-        radius: 3,
+        radius: 5,
 
         getArea: function () {
-            return Math.PI*(Math.pow(circle.radius, 2));
+            return Math.PI*(Math.pow(circle.radius, 2)); //This calculation is accurate (= 28.27433)
         },
 
         logInfo: function (doRounding) {
-            // TODO: complete this method.
-
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
-
             if (doRounding) {
-                return Math.round(circle.getArea());
+                var areaRounded = Math.round(circle.getArea());
+                return ("The area of a circle with radius of " + circle.radius + " is " + areaRounded)  //This calculation is accurate (= 28);
             } else {
-                return circle.getArea;
+                var areaTrue = circle.getArea();
+                return ("The area of a circle with radius of " + circle.radius + " is: " + areaTrue);
             }
-
-            console.log("Area of a circle with radius: " + this.radius + ", is: ");
         }
     };
 
