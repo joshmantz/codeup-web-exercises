@@ -48,16 +48,32 @@
         }
 
         // TODO: Set text color on every other list item to grey
-
+        //One approach is to declare class attributes of 'odd' within the odd list items
+        /*
         var oddList = document.getElementsByClassName('odd');
-        console.log(oddList); //verifies that the three odd list items are being returned.
-        //oddList.style['color'] = 'red'; //currently returns 'undefined'
+
         for (var i=0; i<oddList.length; i++) {
-            oddList[i].style.color = "red";
+            oddList[i].style.color = "grey";
         }
 
         // TODO: Set text color of li with dbid = 1 to blue
+        //Then, use oddList to manipulate the first variable to blue. HTML is read top-to-bottom, so the following call with override the previous call.
         oddList[0].style.color = "blue";
+        */
+
+        //Another (arguably superior) approach is to use an if/else statement. This eliminates establishing unnecessary class attributes of 'odd' by leveraging the power of the if/else statement in combination with a for-loop:
+        var oddListColor = document.getElementsByTagName('li');
+
+        for (var i=0; i < oddListColor.length; i++) {
+            if (i % 2 === 0) {
+                oddListColor[i].style.color = "grey";
+            } else {
+                oddListColor[i].style.color = "black";
+            }
+        }
+
+        //Then, style the first element 'blue' directly. HTML is read top-to-bottom, so the following call with override the previous call.
+        oddListColor[0].style.color = "blue";
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName('sub-paragraph');
