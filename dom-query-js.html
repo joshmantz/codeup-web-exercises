@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
 </head>
+
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+
 <ul>
     <li class="odd" data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -14,7 +17,9 @@
     <li data-dbid="4">Item 4</li>
     <li class="odd" data-dbid="5">Item 5</li>
 </ul>
+
 <h2 id="sub-header">Hello Again.</h2>
+
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -25,61 +30,112 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<button id="button1">Button I</button>
+<button id="button2">Button II</button>
+<button id="button3">Button III</button>
+<button id="button4">Button IV</button>
+<button id="button5">Button V</button>
+
 <script>
     (function() {
         "use strict";
+
         // TODO: Uncomment next line and get the main header element by id
+        // TODO: Set inner html of mainHeader to "JavaScript is Cool" using a button
+        //Establish variables for 'button1' and 'main-header':
+        var buttonHeaderText = document.getElementById('button1')
         var mainHeader = document.getElementById('main-header');
 
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "Hello Codeup!";
+
+        //Establish a function to change innerHTML of mainHeader variable:
+        function changeHeaderText () {
+            mainHeader.innerHTML = 'Javascript is Cool';
+        }
+        //Add an event listener to the buttonHeaderText variable (which points to 'button1')
+        //When clicked, Button I changes the header text to "Javascript is Cool"
+        buttonHeaderText.addEventListener('click', changeHeaderText);
+
+
+
+
 
         // TODO: Uncomment the next line and get the sub header element by id
+        // TODO: Change the color of the sub-header to blue using a button
+        //Establish variables for 'button2' and 'sub-header':
+        var buttonSubHeader = document.getElementById('button2');
         var subHeader = document.getElementById('sub-header');
 
-        // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = '#FFD580';
+        //Establish a function to change the text color of the 'sub-header' variable:
+        function changeSubHeaderColor () {
+            subHeader.style.color = 'blue';
+        }
+
+        //Add an event listener to the buttonSubHeader variable (which points to 'button2'):
+        //When clicked, Button II changes the color of the sub-header text to blue:
+
+        buttonSubHeader.addEventListener('click', changeSubHeaderColor);
+
+
+
+
 
         // TODO: Uncomment the next line and get all list items
+        //Establish variables for list-item elements and 'button3'
+        var buttonListItemsOdd = document.getElementById('button3');
         var listItems = document.getElementsByTagName('li');
 
-        for (var i=0; i<listItems.length; i++) {
-            console.log(listItems[i]);
-        }
-
-        // TODO: Set text color on every other list item to grey
-        //One approach is to declare class attributes of 'odd' within the odd list items
-        /*
-        var oddList = document.getElementsByClassName('odd');
-
-        for (var i=0; i<oddList.length; i++) {
-            oddList[i].style.color = "grey";
-        }
-
-        // TODO: Set text color of li with dbid = 1 to blue
-        //Then, use oddList to manipulate the first variable to blue. HTML is read top-to-bottom, so the following call with override the previous call.
-        oddList[0].style.color = "blue";
-        */
-
-        //Another (arguably superior) approach is to use an if/else statement. This eliminates establishing unnecessary class attributes of 'odd' by leveraging the power of the if/else statement in combination with a for-loop:
-        var oddListColor = document.getElementsByTagName('li');
-
-        for (var i=0; i < oddListColor.length; i++) {
-            if (i % 2 === 0) {
-                oddListColor[i].style.color = "grey";
-            } else {
-                oddListColor[i].style.color = "black";
+        //Establish a function to change every other list item to grey:
+        function liOdd () {
+            for (var i=0; i<listItems.length; i++) {
+                if (i % 2 === 0) {
+                    listItems[i].style.color = 'grey';
+                } else {
+                    listItems[i].style.color = 'black';
+                }
             }
         }
 
-        //Then, style the first element 'blue' directly. HTML is read top-to-bottom, so the following call with override the previous call.
-        oddListColor[0].style.color = "blue";
+        //Establish a 'click' event listener on Button III and pass the liOdd function into it:
+        //Clicking the button turns every other list item to grey.
+        buttonListItemsOdd.addEventListener('click', liOdd);
+
+
+
+
+
+        // TODO: Set text color of li with dbid = 1 to blue using a button
+        //Establish a variable for 'button4' and the list item with dbid = 1;
+        var buttonDbid1 = document.getElementById('button4');
+        var liDbid1 = listItems[0];
+
+        //Establish a function to change the color of liDbid1 to blue:
+        function dbid1Blue () {
+            liDbid1.style.color = 'blue';
+        }
+
+        //Set an event listener of 'click' on the buttonDbid1 variable (which points to 'button4') and pass the dbid1Blue function into it:
+        //Clicking Button IV changes the color of the list item with dbid=1 to blue:
+        buttonDbid1.addEventListener('click', dbid1Blue);
+
+
+
+
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!" using a button
+        //Establish variables for 'button5' and the 'sub-paragraph' class:
+        var buttonSubParagraph1 = document.getElementById('button5');
         var subParagraphs = document.getElementsByClassName('sub-paragraph');
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished";
+        //Establish a function to change the text in the first sub-paragraph to 'Mission Accomplished!':
+        function subPara1Text () {
+            subParagraphs[0].innerHTML = 'Mission Accomplished!';
+        }
+
+        //Establish an event listener of 'click' on 'button5' and pass the subPara1Text function into it:
+        //Clicking Button V changes the text of the first sub-paragraph to 'Mission Accomplished!':
+
+        buttonSubParagraph1.addEventListener('click', subPara1Text);
 
     })();
 </script>
