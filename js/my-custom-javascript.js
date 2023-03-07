@@ -37,3 +37,4 @@ var h1Manipulation = $('#headerOneID').html();
 
 //This tests assigning two list-item elements with the same ID ('liAlphaThreeID' is duplicated), and an attempt is made to change their text to bold. When both are targeted with the same ID, only the first element is impacted. The second element with the same id remains unchanged.
 $('#liAlphaThreeID').css('font-weight', 'bold');
+
