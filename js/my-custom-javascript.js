@@ -43,18 +43,25 @@ $('#liAlphaThreeID').css('font-weight', 'bold');
 
 //This styles boxes:
 $('.boxAlphaClass').css('height','150px').css('width', '200px').css('background-color', 'rebeccapurple');
+
+
+//Every time the user clicks Box 2 (#boxAlphaTwoID), the background color changes to match the iteration of the array:
+$(document).ready(function () {
+    var colorOptions = ['red', 'rebeccapurple', 'grey', 'orange'];
+    var currentIndex = 0;
+
+    $('#boxAlphaTwoID').on('click', function (){
+        $(this).css('background-color', colorOptions[currentIndex]);
+        currentIndex = (currentIndex + 1) % colorOptions.length;
+    });
+});
+
 function clickHandler(e) {
     $(this).css('background-color', 'grey');
 }
-var ele = document.getElementById('boxAlphaTwoID');
+var ele = document.getElementById('boxAlphaOneID');
 ele.addEventListener('click', clickHandler);
 
-/*function clickRemove(e) {
-    $(this).css('background-color', 'rebeccapurple');
-}
-
-var eleUndo = document.getElementById('boxAlphaTwoID');
-eleUndo.addEventListener('click', clickRemove);*/
 
 
 
