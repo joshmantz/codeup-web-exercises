@@ -56,6 +56,23 @@ $(document).ready(function () {
     });
 });
 
+//Modifying the function above to include template literals to create an array of inspirational quotations:
+$(document).ready(function () {
+    var inspireQuotes = [
+        `When you stare into the abyss long enough 
+         the abyss stares back at you. -Nietzsche`,
+        `All of the greatest blessings come by way of madness-
+         indeed, madness that is heaven-sent -Plato`,
+        `The hero is the man of self-achieved submission. -Joseph Campbell`
+    ];
+    var currentIndex = 0;
+//Note that the .text must be used instead of innerHTML in jQuery:
+    $('#paragraphBravoOneID').on('click', function (){
+        $(this).text(inspireQuotes[currentIndex]);
+        currentIndex = (currentIndex + 1) % inspireQuotes.length;
+    });
+});
+
 function clickHandler(e) {
     $(this).css('background-color', 'grey');
 }
