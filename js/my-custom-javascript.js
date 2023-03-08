@@ -125,6 +125,30 @@ function doubleClickHandler(e) {
 var eleBoxThree = document.getElementById('boxAlphaThreeID');
 eleBoxThree.addEventListener('dblclick', doubleClickHandler);
 
+//THIS CHANGES THE BG COLOR OF THE H1 ELEMENT TO LIGHT GREY ON CLICK; IT REMAINS GREY AFTER CLICK:
+$('#headerOneID').on('click', function () {
+    $('#headerOneID').css('background-color', 'lightgrey');
+})
+
+//THIS CHANGES THE FONT SIZE OF ALL PARAGRAPH ELEMENTS IN THE ALPHA PARAGRAPH CLASS TO
+//18PX ON DOUBLE CLICK. IT REMAINS 18PX AFTER CLICK:
+$('.paragraphAlphaClass').on('dblclick', function () {
+    $(".paragraphAlphaClass").css('font-size', '18px');
+})
+
+//ON HOVER, THIS CHANGES TEXT COLOR OF PARAGRAPH WITH QUOTES TO RED, THEN RESETS TO PURPLE ON HOVER-OFF:
+
+$('#paragraphBravoOneID').hover(
+    function () {
+        $(this).css('color', 'darkred');
+    },
+    function () {
+        $(this).css('color', 'rebeccapurple');
+    }
+);
+
+
+
 
 
 
