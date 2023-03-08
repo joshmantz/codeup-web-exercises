@@ -34,7 +34,12 @@
     $(document).off("keydown");
 });*/
 
-let password = "hello";
+
+//EXAMPLE OF USING PASSWORD. WHEN ENTERED CORRECTLY, BG CHANGES RED:
+//IF INCORRECT AND ATTEMPT EXCEEDS 21 CHARACTERS, USER IS ALERTED TO RETRY:
+//OR, IF USER HITS ENTER, AND PW IS INCORRECT, USER IS ALERTED TO REENTER:
+
+/*let password = "hello";
 let userInput = "";
 
 $(document).keyup(function(e) {
@@ -54,8 +59,26 @@ $(document).click(function(e) {
     userInput = ""
     $("body").css("background-color", "white");
     console.log("UserInput emptied: " + userInput + " < should be blank");
-});
+});*/
 
+let gameHack = "3838404037393739666513";
+let playerInput = "";
+
+$(document).keyup(function(e) {
+    console.log(e.keyCode)
+
+    playerInput+= e.keyCode;
+
+    if (gameHack === playerInput) {
+        alert("You've added 30 lives!");
+        $("body").css("background-color", 'darkred');
+    }
+})
+
+$(document).click(function(e) {
+    playerInput = ""
+    $("body").css("background-color", "white");
+})
 
 
 
