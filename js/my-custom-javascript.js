@@ -39,7 +39,7 @@ var h1Manipulation = $('#headerOneID').html();
 $('#liAlphaThreeID').css('font-weight', 'bold');
 
 
-//Box Work:
+//THE FOLLOWING FUNCTIONS IMPACT THE BOX ELEMENTS ON THE HTML:
 
 //This styles boxes:
 $('.boxAlphaClass').css('height','150px').css('width', '200px').css('background-color', 'rebeccapurple');
@@ -56,28 +56,78 @@ $(document).ready(function () {
     });
 });
 
-//Modifying the function above to include template literals to create an array of inspirational quotations:
+//THE FOLLOWING FUNCTION BLOCK CYCLES THROUGH INSPIRATIONAL QUOTES AND DISPLAYS THEM TO THE USER.
+//THESE WILL CYCLE AUTOMATICALLY EVERY 7 SECONDS.
+//THE USER ALSO HAS THE OPTION TO CLICK THROUGH AT THEIR OWN PACE. THE CYCLE RESUMES WHEN THEY STOP CLICKING.
+
+//Step I: Define and array and populate it with data:
+//This defines an array of objects as strings including by text and author:
 $(document).ready(function () {
-    var inspireQuotes = [
-        `When you stare into the abyss long enough 
-         the abyss stares back at you. -Nietzsche`,
-        `All of the greatest blessings come by way of madness-
-         indeed, madness that is heaven-sent -Plato`,
-        `The hero is the man of self-achieved submission. -Joseph Campbell`
+    const inspireQuotes = [
+        { text: "When you stare into the abyss long enough the abyss stares back at you.", author: "Nietzsche"},
+        { text: "All of the greatest blessings come by way of madness- indeed, madness that is heaven-sent.", author: "Plato"},
+        { text: "The hero is the man of self-achieved submission.", author: "Joseph Campbell"}
     ];
-    var currentIndex = 0;
-//Note that the .text must be used instead of innerHTML in jQuery:
-    $('#paragraphBravoOneID').on('click', function (){
-        $(this).text(inspireQuotes[currentIndex]);
-        currentIndex = (currentIndex + 1) % inspireQuotes.length;
+//Step II: Set the index of the array to 0 by assigning it to a variable:
+    let currentQuoteIndex = 0;
+
+//Step III: Create a function to establish the next quote:
+//This function displays the current quote on the page targeted at the paragraphBravoOneID Element:
+    function displayContent () {
+        const quote = inspireQuotes[currentQuoteIndex];
+        const quoteText = `${quote.text} - ${quote.author}`;
+        $("#paragraphBravoOneID").text(quoteText);
+    }
+
+//Step IV: Establish a function to cycle through the next quote in the array:
+//The 'if' statement resets the array and starts again at 0, to ensure a continuous cycle:
+    function nextInspireQuote() {
+        currentQuoteIndex++;
+        if(currentQuoteIndex === inspireQuotes.length) {
+            currentQuoteIndex = 0;
+        }
+        displayContent();
+    }
+
+//Step V:  Add the 'click' event listener to the element.
+//This gives the user the capability to click through quotes at their own pace:
+
+    $('#paragraphBravoOneID').click(function () {
+        nextInspireQuote();
+    })
+
+//Step VI: Add a setInterval event listener.
+//This ensures that quotes cycle automatically, even if a user doesn't click:
+//Then, it returns back to cycling if they stop clicking:
+
+    let intervalId = setInterval(function () {
+        nextInspireQuote();
+    }, 7000);
+
+//Step V: Establish a function to stop the interval when a user clicks:
+    $('#paragraphBravoOneID').click(function () {
+        clearInterval(intervalId);
+        intervalId = setInterval(function() {
+            nextInspireQuote();
+        }, 7000);
     });
+
+//Step VI: Display the initial quote on page load by calling the displayContent function:
+    displayContent();
 });
 
-function clickHandler(e) {
-    $(this).css('background-color', 'grey');
+
+//THIS FUNCTION CHANGES THE BG COLOR OF BOX3 TO ORANGE ON DOUBLE CLICK:
+function doubleClickHandler(e) {
+    $(this).css('background-color', 'orange');
 }
-var ele = document.getElementById('boxAlphaOneID');
-ele.addEventListener('click', clickHandler);
+
+var eleBoxThree = document.getElementById('boxAlphaThreeID');
+eleBoxThree.addEventListener('dblclick', doubleClickHandler);
+
+
+
+
 
 
 
