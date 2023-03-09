@@ -1,0 +1,33 @@
+.navbarDiv {
+    background-image: url("/media/dvnp-assets/Racetrack (2).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+    height: 12em;
+    border: 1pt solid red;
+    width: 100%;
+    margin: 0;
+}
+
+span {
+    /*border: 1pt solid red;*/
+    width: 100%;
+}
+
+.navbarSpan1 {
+    color: whitesmoke;
+}
+
+.navbarSpan2 {
+    color: orangered;
+    font-style: italic;
+}
+
+
+
+.row {
+    border: 1pt solid hotpink;
+    width: 100%;
+    margin: auto;
+}
